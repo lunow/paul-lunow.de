@@ -1,0 +1,33 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the latest code
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: 🛠 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Step 3: Install dependencies
+      - name: 📦 Install dependencies
+        run: npm install
+
+      # Step 4: Build the static project
+      - name: 🏗 Build the project
+        run: npm run build
+
+      # Step 5: Deploy files via FTP
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: w00ee8e3.kasserver.com
+          username: f017005a
+          password: ${{ secrets.ftp_password }}
+          local-dir: ./out
