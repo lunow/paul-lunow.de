@@ -71,12 +71,12 @@ export function Welcome() {
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 <span className="font-semibold">
                   Schon als Kind hatte ich den Traum, Schriftsteller zu werden.
-                </span>
+                </span>{' '}
                 Dieser Wunsch hat mich dazu inspiriert, ein Literaturportal zu
-                programmieren – ein Ort, an dem ich und meine Freunde während
-                der Schulzeit unsere Ideen und Gedanken teilen konnten. Aus
-                diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche, in
-                denen ich in nahezu jeder vorstellbaren Rolle rund um
+                programmieren – ein Ort, an dem ich und meine Freund:innen
+                während der Schulzeit unsere Ideen und Gedanken teilen konnten.
+                Aus diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche,
+                in denen ich in nahezu jeder vorstellbaren Rolle rund um
                 Technologie tätig war. Nun wird mein Kindheitstraum wahr: Im
                 Januar 2025 erscheint mein erster Roman, Riaru.
               </p>
