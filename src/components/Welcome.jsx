@@ -85,9 +85,9 @@ export function Welcome() {
                   Heute lebe ich an der Schnittstelle von Technologie, Führung
                   und Kreativität.
                 </span>{' '}
-                Als Head of Technology bei der XU Gruppe in Berlin unterstütze
-                ich Unternehmen dabei, ihren Transformationsprozess zu meistern.
-                Mit meinem Podcast teile ich mein Wissen über Tech-Produkte und
+                Als Head of Technology bei XU sustainable unterstütze ich
+                Unternehmen dabei, ihren Transformationsprozess zu meistern. Mit
+                meinem Podcast teile ich mein Wissen über Tech-Produkte und
                 Leadership. Zudem begleite ich als Mentor und Berater Teams und
                 Unternehmen, die Orientierung in der digitalen Welt suchen.
               </p>

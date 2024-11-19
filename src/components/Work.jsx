@@ -105,13 +105,13 @@ export function Work() {
           Einzigartige Online Wissensplattform zu den Megatrends unsere Zeit
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          Bei der{' '}
+          Bei{' '}
           <a
             href="https://www.xu.de"
             target="_blank"
             className="underline hover:text-teal-700"
           >
-            XU Group GmbH
+            XU sustainable
           </a>{' '}
           darf ich das Tech Team leiten. Wir bauen Weiterbildungsangebote mit
           denen Du Dich und Dein Team auf eine volatile Zukunft vorbereitest.
@@ -124,7 +124,11 @@ export function Work() {
             description="Schau Dich um und finde heraus ob unser Angebot zu Dir passt."
             price="15"
             href="https://www.xu.de"
-            features={['Absolut kostenlos', 'Viele Informationen', 'Use cases']}
+            features={[
+              'Schlüsselfertige Lösung',
+              'Hilfreiche Unterstützung',
+              'Use cases',
+            ]}
           />
           <Plan
             featured
