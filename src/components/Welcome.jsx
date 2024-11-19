@@ -86,11 +86,10 @@ export function Welcome() {
                   und Kreativität.
                 </span>{' '}
                 Als Head of Technology bei der XU Gruppe in Berlin unterstütze
-                ich Unternehmen dabei, innovative digitale Lösungen zu
-                entwickeln und umzusetzen. Mit meinem Podcast teile ich mein
-                Wissen über Tech-Produkte und Leadership. Zudem begleite ich als
-                Mentor und Berater Teams und Unternehmen, die Orientierung in
-                der digitalen Welt suchen.
+                ich Unternehmen dabei, ihren Transformationsprozess zu meistern.
+                Mit meinem Podcast teile ich mein Wissen über Tech-Produkte und
+                Leadership. Zudem begleite ich als Mentor und Berater Teams und
+                Unternehmen, die Orientierung in der digitalen Welt suchen.
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 Diese Website spiegelt alle Facetten meiner Arbeit und

@@ -114,7 +114,7 @@ export function Work() {
             XU Group GmbH
           </a>{' '}
           darf ich das Tech Team leiten. Wir bauen Weiterbildungsangebote mit
-          denen Du Dich und Dein Team auf eine volantile Zukunft vorbereitest.
+          denen Du Dich und Dein Team auf eine volatile Zukunft vorbereitest.
         </p>
       </Container>
       <div className="mx-auto mt-16 hidden max-w-5xl md:block lg:px-6">
