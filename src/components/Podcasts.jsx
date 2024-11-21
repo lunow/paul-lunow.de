@@ -11,6 +11,7 @@ import gridsImage from '@/images/screencasts/grids.svg'
 import setupImage from '@/images/screencasts/setup.svg'
 import strokesImage from '@/images/screencasts/strokes.svg'
 import podcastCover from '@/images/product-and-cake.png'
+import { Button } from './Button'
 
 const videos = [
   {
@@ -290,27 +291,33 @@ export function Podcasts() {
           episodes.
         </p>
         <div className="mt-4 flex justify-center space-x-4">
-          <a
+          <Button
+            as="a"
             href="https://podcastle.ai/show/product-and-cake-9408"
             target="_blank"
-            className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+            variant="solid"
+            color="blue"
           >
             Website
-          </a>
-          <a
+          </Button>
+
+          <Button
+            as="a"
             href="https://podcasts.apple.com/gb/podcast/product-and-cake/id1651982219"
             target="_blank"
-            className="rounded bg-gray-800 px-4 py-2 text-white hover:bg-gray-900"
+            variant="outline"
           >
             Apple
-          </a>
-          <a
+          </Button>
+
+          <Button
+            as="a"
             href="https://open.spotify.com/show/6GWmx7OdEn04inrQjp3Bif"
             target="_blank"
-            className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
+            variant="outline"
           >
             Spotify
-          </a>
+          </Button>
         </div>
       </Container>
     </section>

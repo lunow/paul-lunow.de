@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Button } from '@/components/Button'
 
 function LinkedInIcon(props) {
   return (
@@ -58,13 +59,22 @@ export function ContactLinks() {
         },
         { href: 'mailto:hallo25@paul.lun.io', text: 'E-Mail', icon: MailIcon },
       ].map(({ href, text, icon }) => (
-        <Link
+        // <Link
+        //   href={href}
+        //   className="my-2 inline-flex items-center rounded p-2 text-base font-medium tracking-tight text-slate-900 hover:bg-teal-700 hover:text-white md:justify-center md:text-center"
+        // >
+        //   {icon({ className: 'h-10 w-10 fill-current' })}
+        //   <span className="ml-2 mr-6">{text}</span>
+        // </Link>
+
+        <Button
           href={href}
-          className="my-2 inline-flex items-center rounded p-2 text-base font-medium tracking-tight text-slate-900 hover:bg-teal-700 hover:text-white md:justify-center md:text-center"
+          variant="outline"
+          className="my-2 inline-flex items-center rounded text-base font-medium md:justify-center md:text-center"
         >
-          {icon({ className: 'h-10 w-10 fill-current' })}
+          {/* {icon({ className: 'h-10 w-10 fill-current' })} */}
           <span className="ml-2 mr-6">{text}</span>
-        </Link>
+        </Button>
       ))}
     </div>
   )
