@@ -200,6 +200,19 @@ export function Podcasts() {
     }
   }
 
+  const showTime = (runtime, currentTime) => {
+    const totalRuntimeInSeconds = runtime.minutes * 60 + runtime.seconds
+    const currentTimeInSeconds = currentTime.minutes * 60 + currentTime.seconds
+    const remainingTimeInSeconds = totalRuntimeInSeconds - currentTimeInSeconds
+
+    const remainingMinutes = Math.floor(remainingTimeInSeconds / 60)
+    const remainingSeconds = remainingTimeInSeconds % 60
+
+    return `${remainingMinutes.toString().padStart(2, '0')}:${remainingSeconds
+      .toString()
+      .padStart(2, '0')}`
+  }
+
   return (
     <section
       id="podcasts"
@@ -263,10 +276,7 @@ export function Podcasts() {
                     className="ml-2"
                   >
                     {isPlaying === index
-                      ? `${video.runtime.minutes - currentTime.minutes}:${
-                          video.runtime.seconds -
-                          currentTime.seconds.toString().padStart(2, '0')
-                        }`
+                      ? showTime(video.runtime, currentTime)
                       : `${video.runtime.minutes}:${video.runtime.seconds
                           .toString()
                           .padStart(2, '0')}`}
