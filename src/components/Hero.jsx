@@ -46,7 +46,7 @@ export function Hero() {
               scale={0.5}
             />
             <div
-              className="absolute inset-0 h-full w-full bg-cover bg-center"
+              className="absolute inset-0 left-0 h-full w-full bg-cover bg-right bg-no-repeat xl:bg-contain"
               style={{
                 backgroundImage: `url(${backgroundImage.src})`,
                 opacity: 0.5,
