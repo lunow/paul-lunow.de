@@ -58,7 +58,7 @@ export function ContactLinks() {
           icon: InstagramIcon,
         },
         { href: 'mailto:hallo25@paul.lun.io', text: 'E-Mail', icon: MailIcon },
-      ].map(({ href, text, icon }) => (
+      ].map(({ href, text, icon }, index) => (
         // <Link
         //   href={href}
         //   className="my-2 inline-flex items-center rounded p-2 text-base font-medium tracking-tight text-slate-900 hover:bg-teal-700 hover:text-white md:justify-center md:text-center"
@@ -68,6 +68,7 @@ export function ContactLinks() {
         // </Link>
 
         <Button
+          key={index}
           href={href}
           variant="outline"
           className="my-2 inline-flex items-center rounded text-base font-medium md:justify-center md:text-center"
