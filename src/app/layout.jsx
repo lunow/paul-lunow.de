@@ -4,6 +4,7 @@ import Script from 'next/script'
 
 import '@/styles/tailwind.css'
 import coverImage from '@/images/Cover-riaru-web.jpg'
+import favicon from '@/images/favicon.png'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       )}
     >
       <head>
+        <link rel="icon" href={favicon.src} />
         <link
           rel="preconnect"
           href="https://cdn.fontshare.com"
