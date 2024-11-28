@@ -73,7 +73,7 @@ export function Hero() {
               Dein Blick hinter die Kulissen
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              Riaru ist das erste Buch von Paul&nbsp;K.&nbsp;Lunow und gibt
+              Riaru ist der Debütroman von Paul&nbsp;K.&nbsp;Lunow und gibt
               einen Einblick in die Welt der Tech-Unternehmen.
             </p>
             <Preorder></Preorder>
