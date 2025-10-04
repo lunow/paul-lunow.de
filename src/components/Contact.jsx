@@ -32,7 +32,7 @@ export function Contact() {
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
               <span className="block text-teal-700">Paul K. Lunow –</span>
-              Head of Technology at XU Group GmbH.
+              CTO at Vention GmbH.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               Ich freue mich, von Dir zu hören! Auf dieser Seite habe ich

@@ -21,7 +21,7 @@ function Testimonial() {
         <strong className="font-semibold text-teal-950 before:content-['—_']">
           Olga
         </strong>
-        , technisch weniger versierte Testleserin, Künstlerin
+        , technisch weniger versierte Leserin, Künstlerin
       </figcaption>
     </figure>
   )

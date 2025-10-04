@@ -5,7 +5,7 @@ export function Preorder({ learnMore }) {
     <div>
       <div className="mt-8 flex gap-4">
         <Button href="https://amzn.eu/d/3YV37dm" target="_blank" color="blue">
-          Vorbestellen auf Amazon*
+          Bestellen auf Amazon*
         </Button>
         {learnMore !== 'false' && (
           <Button href="#introduction" variant="outline" color="blue">

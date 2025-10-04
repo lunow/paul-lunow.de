@@ -77,19 +77,19 @@ export function Welcome() {
                 während der Schulzeit unsere Ideen und Gedanken teilen konnten.
                 Aus diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche,
                 in denen ich in nahezu jeder vorstellbaren Rolle rund um
-                Technologie tätig war. Nun wird mein Kindheitstraum wahr: Im
-                Januar 2025 erscheint mein erster Roman, Riaru.
+                Technologie tätig war. Nun ist mein Kindheitstraum wahr geworden: Im
+                Januar 2025 erschien mein erster Roman, Riaru.
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 <span className="font-semibold">
                   Heute lebe ich an der Schnittstelle von Technologie, Führung
                   und Kreativität.
                 </span>{' '}
-                Als Head of Technology bei XU sustainable unterstütze ich
-                Unternehmen dabei, ihren Transformationsprozess zu meistern. Mit
+                Als CTO bei Vention unterstütze ich Unternehmen dabei, erfolgreiche 
+                Technologieprojekte umzusetzen. In
                 meinem Podcast teile ich mein Wissen über Tech-Produkte und
                 Leadership. Zudem begleite ich als Mentor und Berater Teams und
-                Unternehmen, die Orientierung in der digitalen Welt suchen.
+                Unternehmen, Orientierung in der digitalen Welt zu finden.
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 Diese Website spiegelt alle Facetten meiner Arbeit und

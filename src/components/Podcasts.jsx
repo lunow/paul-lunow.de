@@ -229,7 +229,7 @@ export function Podcasts() {
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           Ghonche und ich haben uns bei mobile.de im Podcast Studio getroffen.
-          Wir hatten einen Kuchen dabei, und niemand brauchte gerade das Studio,
+          Niemand brauchte gerade das Studio und wir hatten Kuchen dabei,
           also haben wir aus Spaß einen Podcast aufgenommen. Das Feedback im
           internen Chat war überwältigend. Genau so wie der Spaß den wir bei der
           Aufnahme hatten. Also haben wir weiter gemacht!

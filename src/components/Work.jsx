@@ -11,8 +11,9 @@ function Plan({ name, description, price, features, href, featured = false }) {
     <div
       className={clsx(
         'relative px-4 py-16 sm:rounded-5xl sm:px-10 md:py-12 lg:px-12',
-        featured && 'bg-green-700 sm:shadow-lg',
+        featured && 'sm:shadow-lg',
       )}
+      style={featured ? { backgroundColor: '#FF6A47' } : {}}
     >
       {featured && (
         <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
@@ -102,19 +103,19 @@ export function Work() {
           Arbeit
         </SectionHeading>
         <p className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-          Einzigartige Online Wissensplattform zu den Megatrends unsere Zeit
+          Engineering AI peace of mind
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
           Bei{' '}
           <a
-            href="https://www.xu.de"
+            href="https://www.ventionteams.com"
             target="_blank"
             className="underline hover:text-teal-700"
           >
-            XU sustainable
+            Vention
           </a>{' '}
-          darf ich das Tech Team leiten. Wir bauen Weiterbildungsangebote mit
-          denen Du Dich und Dein Team auf eine volatile Zukunft vorbereitest.
+          darf ich als CTO Unternehmen unterstützen, erfolgreiche Technologieprojekte umzusetzen.
+          Mit der Expertise von über 3000 Entwickler:innen können wir jedes Projekt zum Erfolg führen.
         </p>
       </Container>
       <div className="mx-auto mt-16 hidden max-w-5xl md:block lg:px-6">
@@ -123,11 +124,11 @@ export function Work() {
             name="Check the Website"
             description="Schau Dich um und finde heraus ob unser Angebot zu Dir passt."
             price="15"
-            href="https://www.xu.de"
+            href="https://www.ventionteams.com"
             features={[
-              'Schlüsselfertige Lösung',
-              'Hilfreiche Unterstützung',
-              'Use cases',
+              'Engineering Peace of Mind',
+              'Over 3000 Developers',
+              '100% Focus on Tech',
             ]}
           />
           <Plan
@@ -135,12 +136,12 @@ export function Work() {
             name="Talk to sales"
             description="Ich habe wunderbare Sales Kollegen, die mit Dir über Dein Projekt sprechen."
             price="229"
-            href="https://xu.de/kontakt/"
+            href="https://ventionteams.com/de/kontakt"
             features={[
-              'Über 400h Lernmaterial',
-              'Alle Megatrends unserer Zeit',
-              'Innovative Lernformate',
-              'Zugeschnittene Projekte',
+              'Nur 2 Wochen bis zum Kick-off',
+              'Technologie Match und Cultural fit',
+              '30 Tage ramp down, wenn nötig',
+              'CTO Leadership support',
               'Signiertes Exemplar meines Buches*',
             ]}
           />
