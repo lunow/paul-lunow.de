@@ -14,14 +14,12 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Paul K. Lunow',
-  description:
-    'Entdecke Riaru, den Debütroman von Paul K. Lunow. Ein packender Cyber-Roman, der die Geheimnisse von Tech-Konzernen und die Macht von Metadaten enthüllt. Jetzt vorbestellen!',
+  description: 'Entdecke Riaru, den Debütroman von Paul K. Lunow. Ein packender Cyber-Roman, der die Geheimnisse von Tech-Konzernen und die Macht von Metadaten enthüllt. Jetzt vorbestellen!',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="de"
       className={clsx(
         'h-full scroll-smooth bg-white antialiased',
         inter.variable,
@@ -38,12 +36,9 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content={coverImage.src} />
         <meta property="og:url" content="https://www.paul-lunow.de" />
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content="de_DE" />
       </head>
       <body className="flex min-h-full flex-col">{children}</body>
 

@@ -91,7 +91,7 @@ function Plan({ name, description, price, features, href, featured = false }) {
   )
 }
 
-export function Work() {
+export function Work({ translations }) {
   return (
     <section
       id="work"
@@ -100,54 +100,35 @@ export function Work() {
     >
       <Container>
         <SectionHeading number="4" id="work-title">
-          Arbeit
+          {translations.title}
         </SectionHeading>
         <p className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-          Engineering AI peace of mind
+          {translations.heading}
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          Bei{' '}
-          <a
-            href="https://www.ventionteams.com"
-            target="_blank"
-            className="underline hover:text-teal-700"
-          >
-            Vention
-          </a>{' '}
-          darf ich als CTO Unternehmen unterstützen, erfolgreiche Technologieprojekte umzusetzen.
-          Mit der Expertise von über 3000 Entwickler:innen können wir jedes Projekt zum Erfolg führen.
+          {translations.description}
         </p>
       </Container>
       <div className="mx-auto mt-16 hidden max-w-5xl md:block lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
-            name="Check the Website"
-            description="Schau Dich um und finde heraus ob unser Angebot zu Dir passt."
+            name={translations.plan1.name}
+            description={translations.plan1.description}
             price="15"
-            href="https://www.ventionteams.com"
-            features={[
-              'Engineering Peace of Mind',
-              'Over 3000 Developers',
-              '100% Focus on Tech',
-            ]}
+            href={translations.plan1.href}
+            features={translations.plan1.features}
           />
           <Plan
             featured
-            name="Talk to sales"
-            description="Ich habe wunderbare Sales Kollegen, die mit Dir über Dein Projekt sprechen."
+            name={translations.plan2.name}
+            description={translations.plan2.description}
             price="229"
-            href="https://ventionteams.com/de/kontakt"
-            features={[
-              'Nur 2 Wochen bis zum Kick-off',
-              'Technologie Match und Cultural fit',
-              '30 Tage ramp down, wenn nötig',
-              'CTO Leadership support',
-              'Signiertes Exemplar meines Buches*',
-            ]}
+            href={translations.plan2.href}
+            features={translations.plan2.features}
           />
           <p></p>
           <p className="pt-2 text-right text-sm text-gray-500">
-            (*OK, das muss ich noch besprechen)
+            {translations.disclaimer}
           </p>
         </div>
       </div>

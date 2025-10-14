@@ -6,7 +6,7 @@ import authorImage from '@/images/profile.jpg'
 import { CheckIcon } from '@/components/CheckIcon'
 import { ContactLinks } from '@/components/ContactLinks'
 
-export function Contact() {
+export function Contact({ translations }) {
   return (
     <section
       id="contact"
@@ -28,43 +28,28 @@ export function Contact() {
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
             <SectionHeading number="5" id="author-title">
-              Kontakt
+              {translations.title}
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-teal-700">Paul K. Lunow –</span>
-              CTO at Vention GmbH.
+              <span className="block text-teal-700">{translations.heading}</span>
+              {translations.subtitle}
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              Ich freue mich, von Dir zu hören! Auf dieser Seite habe ich
-              zusammengefasst, was mich antreibt, inspiriert und ausmacht. Wenn
-              Du Fragen hast oder den Austausch suchst, erreichst Du mich per
-              E-Mail oder über meine sozialen Kanäle. Hier sind ein paar gute
-              Gründe, warum Du mir schreiben könntest:
+              {translations.description}
             </p>
             <ul role="list" className="mt-8 space-y-3">
-              {[
-                '<span class="font-semibold">Du hast eine neue Start-up- oder Projektidee</span> und suchst einen Sparringspartner für die Umsetzung.',
-                '<span class="font-semibold">Dein Team braucht Unterstützung,</span> um Projekte effizient voranzutreiben.',
-                '<span class="font-semibold">Du möchtest ein signiertes Exemplar meines Buchs</span> oder ein Interview mit mir führen.',
-                '<span class="font-semibold">Für Deine Veranstaltung suchst Du einen Speaker</span> oder Workshop-Leiter.',
-                '<span class="font-semibold">Du hast Feedback</span> zu meiner Arbeit, meiner Website oder möchtest einfach in Kontakt treten.',
-              ].map((feature) => (
-                <li key={feature} className="flex">
+              {translations.reasons.map((reason, index) => (
+                <li key={index} className="flex">
                   <CheckIcon className="h-8 w-8 flex-none fill-teal-800" />
                   <span
                     className="ml-4"
-                    dangerouslySetInnerHTML={{ __html: feature }}
+                    dangerouslySetInnerHTML={{ __html: reason }}
                   ></span>
                 </li>
               ))}
             </ul>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              <span className="font-bold">Impressum:</span> Auf dieser Seite
-              werden keine personenbezogenen Daten gespeichert – deshalb
-              musstest Du auch kein nerviges Cookie-Banner wegklicken. Diese
-              Seite dient ausschließlich dazu, mich und meine Arbeit
-              vorzustellen. Gemäß Telemediengesetz stehe ich als verantwortliche
-              Person für den Inhalt dieser Website ein.
+              <span className="font-bold">{translations.impressum}</span> {translations.impressumText}
             </p>
             <ContactLinks></ContactLinks>
           </div>

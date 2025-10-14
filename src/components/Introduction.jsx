@@ -4,19 +4,18 @@ import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import { Preorder } from '@/components/Preorder'
 
-const stats = [
-  { id: 1, name: 'Seitenzahl', value: '244' },
-  { id: 2, name: 'Sprache', value: 'deutsch' },
-  {
-    id: 3,
-    name: 'Herausgeber',
-    value: 'Periplaneta',
-    link: 'https://www.periplaneta.com/',
-  },
-  { id: 4, name: 'Erscheinungstermin', value: '15.01.2025' },
-]
-
-export default function Facts() {
+export default function Facts({ translations }) {
+  const stats = [
+    { id: 1, name: translations.stats.pages, value: '244' },
+    { id: 2, name: translations.stats.language, value: translations.stats.language === 'Language' ? 'German' : 'deutsch' },
+    {
+      id: 3,
+      name: translations.stats.publisher,
+      value: 'Periplaneta',
+      link: 'https://www.periplaneta.com/',
+    },
+    { id: 4, name: translations.stats.releaseDate, value: '15.01.2025' },
+  ]
   return (
     <div className="bg-white pt-1">
       <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
@@ -46,7 +45,7 @@ export default function Facts() {
   )
 }
 
-export function Introduction() {
+export function Introduction({ translations, preorderTranslations }) {
   return (
     <section
       id="introduction"
@@ -55,34 +54,21 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Willkommen im modernsten Unternehmen der Welt
+          {translations.title}
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Riaru ist das global erfolgreichste Unternehmen: ein
-          Online-Multiplayer-Game, das seinen Usern ermöglicht, in fremde Welten
-          einzutauchen, sich selbst zu verwirklichen und sogar das eigene
-          Business gewinnbringend zu vermarkten. Die Welt für jeden zu einem
-          besseren Ort zu machen, ist das erklärte Ziel von Riaru.
+          {translations.paragraph1}
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Mic möchte unbedingt an dieser idealistischen Idee mitwirken. Doch
-          selbst ein exzellenter Studienabschluss in Softwareentwicklung ist
-          unbedeutend, wenn man ihn in einer argentinischen Kleinstadt erworben
-          hat. Der Karrieresprung nach Europa scheint aussichtlos. Doch dann
-          wird Tuuli, die Gründerin von Riaru, auf Mic aufmerksam. Der Job im
-          Berliner Headquarter gleicht einem Traum. Bis Mic erwacht.
+          {translations.paragraph2}
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Paul K. Lunow, selbst Gründer und Programmierer, gewährt in diesem
-          spannenden Cyber-Roman tiefe Einblicke in die Struktur von
-          Tech-Konzernen und den Umgang mit Metadaten. Mit seinem umfangreichen
-          Hintergrundwissen macht er uns begreiflich, welch komplexe digitalen
-          Abläufe in den Systemen hinter unseren Monitoren geschehen.
+          {translations.paragraph3}
         </p>
 
-        <Facts></Facts>
+        <Facts translations={translations}></Facts>
         <div className="flex justify-center pt-8 text-center">
-          <Preorder learnMore="false"></Preorder>
+          <Preorder learnMore="false" translations={preorderTranslations}></Preorder>
         </div>
       </Container>
     </section>

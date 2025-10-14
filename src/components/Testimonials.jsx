@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
@@ -7,116 +6,11 @@ import {
   ExpandableButton,
   ExpandableItems,
 } from '@/components/Expandable'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
-import avatarImage6 from '@/images/avatars/avatar-6.png'
-import avatarImage7 from '@/images/avatars/avatar-7.png'
-import avatarImage8 from '@/images/avatars/avatar-8.png'
-import avatarImage9 from '@/images/avatars/avatar-9.png'
-import avatarImage10 from '@/images/avatars/avatar-10.png'
-import avatarImage11 from '@/images/avatars/avatar-11.png'
+// Avatar images are no longer used - we use emojis instead
 
-const testimonials = [
-  [
-    {
-      content:
-        'Vielen Dank auch nochmal für deinen Impuls. Dieser war wirklich sehr gelungen – wir konnten einiges daraus mitnehmen.',
-      author: {
-        name: 'Antonio',
-        role: 'Vorstand',
-        image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'Bleib in den Vorträgen so ehrlich, was auch nicht funktioniert – das kam sehr gut an!',
-      author: {
-        name: 'Julius',
-        role: 'Sprecher des Vorstands',
-        image: avatarImage4,
-      },
-    },
-    {
-      content:
-        'Man I swear I like you so much and thank you for getting back to me, this means a lot for me',
-      author: {
-        name: 'Mohammad',
-        role: 'Senior Full Stack Engineer',
-        image: avatarImage9,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'Wir sprechen noch oft von dir und sind dir sehr dankbar, was du uns alles aufgebaut hast. Ohne dich wären wir nie so weit gekommen. Komm bald mal wieder bei uns vorbei!',
-      author: {
-        name: 'Ulla',
-        role: 'Corporate Communications',
-        image: avatarImage11,
-      },
-    },
-    {
-      content:
-        'Jedes Team kann super happy sein Dich und Deine nice, neugierige Energie an Bord zu haben.',
-      author: {
-        name: 'Katharina',
-        role: 'HR Manager',
-        image: avatarImage8,
-      },
-    },
-    {
-      content:
-        'Merke immer wieder wie sehr es mir Spaß macht mit dir zusammenzuarbeiten. Pragmatisch, schnell, auf Augenhöhe.',
-      author: {
-        name: 'Luisa',
-        role: 'Head of Marketing',
-        image: avatarImage5,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'Ich finde deine Ideen sehr spannend, ein bisschen unkonventionell und sehr inspirierend und zukunftsorientiert.',
-      author: {
-        name: 'Eva',
-        role: 'Head of Agile Transformation',
-        image: avatarImage10,
-      },
-    },
-    {
-      content:
-        'Mit was für einer Ruhe und Leichtigkeit du die Fragen stellst. Und wirklich gute Fragen - das ist eine Kunst.',
-      author: {
-        name: 'Miriam',
-        role: 'Founder',
-        image: avatarImage6,
-      },
-    },
-    {
-      content:
-        'Building a new team consisting of externals and internals from multiple teams is rather challenging. He managed to bring all of us together around the same goal, which I find very impressive in such a short time.',
-      author: {
-        name: 'Ghonche',
-        role: 'Lead Product Manager',
-        image: avatarImage7,
-      },
-    },
-    {
-      content:
-        'Es ist toll jemandem wie dich mit Unternehmergeist sowie echtem Drive für unsere Kunden UND unsere Umwelt UND unsere Teams an Board zu haben!',
-      author: {
-        name: 'Patricia',
-        role: 'CEO',
-        image: avatarImage6,
-      },
-    },
-  ],
-]
+// Testimonials are now provided via translations prop
 
-function Testimonial({ author, children }) {
+function Testimonial({ author, children, locale = 'en' }) {
   const emojis = [
     '👤',
     '🧑',
@@ -146,7 +40,15 @@ function Testimonial({ author, children }) {
   return (
     <figure className="rounded-4xl p-8 shadow-md ring-1 ring-slate-900/5">
       <blockquote>
-        <p className="text-lg tracking-tight text-slate-900 before:content-['“'] after:content-['”']">
+        <p
+          className={clsx(
+            'text-lg tracking-tight text-slate-900',
+            locale === 'de'
+              ? "before:content-['„'] after:content-['“']"
+              : "before:content-['“'] after:content-['”']",
+            'before:mr-0.5 after:ml-0.5'
+          )}
+        >
           {children}
         </p>
       </blockquote>
@@ -174,17 +76,22 @@ function Testimonial({ author, children }) {
   )
 }
 
-export function Testimonials() {
+export function Testimonials({ translations, locale = 'en' }) {
+  const all = translations.allTestimonials
+  // Distribute flat array into three columns
+  const columns = [[], [], []]
+  all.forEach((item, index) => {
+    columns[index % 3].push(item)
+  })
+  
   return (
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
         <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          Nette Worte aus meinem Umfeld...
+          {translations.title}
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
-          Ich bin so glücklich über die vielen tollen Menschen aus der ganzen
-          Welt mit denen ich zusammenarbeiten durfte und darf. Hier sind einige
-          Zitate, leicht gekürzt und anonymisiert. Ich danke euch allen!
+          {translations.description}
         </p>
       </Container>
       <Expandable className="group mt-16">
@@ -192,16 +99,17 @@ export function Testimonials() {
           role="list"
           className="mx-auto grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
         >
-          {testimonials
+          {columns
             .map((column) => column[0])
+            .filter(Boolean)
             .map((testimonial, testimonialIndex) => (
               <li key={testimonialIndex} className="lg:hidden">
-                <Testimonial author={testimonial.author}>
+                <Testimonial author={testimonial.author} locale={locale}>
                   {testimonial.content}
                 </Testimonial>
               </li>
             ))}
-          {testimonials.map((column, columnIndex) => (
+          {columns.map((column, columnIndex) => (
             <li
               key={columnIndex}
               className="hidden group-data-[expanded]:list-item lg:list-item"
@@ -217,7 +125,7 @@ export function Testimonials() {
                         testimonialIndex > 1 && 'mt-8',
                       )}
                     >
-                      <Testimonial author={testimonial.author}>
+                      <Testimonial author={testimonial.author} locale={locale}>
                         {testimonial.content}
                       </Testimonial>
                     </li>
@@ -227,7 +135,7 @@ export function Testimonials() {
             </li>
           ))}
         </ul>
-        <ExpandableButton>Read more testimonials</ExpandableButton>
+        <ExpandableButton>{translations.readMore}</ExpandableButton>
       </Expandable>
     </section>
   )

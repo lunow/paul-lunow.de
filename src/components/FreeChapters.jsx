@@ -2,7 +2,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 
-export function FreeChapters() {
+export function FreeChapters({ translations }) {
   return (
     <section
       id="free-chapters"
@@ -17,11 +17,10 @@ export function FreeChapters() {
           <Pattern className="absolute -top-32 left-0 w-full sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:left-2/3 xl:right-auto" />
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-              Sprechen wir über Dein Projekt
+              {translations.title}
             </h2>
             <p className="mt-4 text-lg tracking-tight text-teal-100">
-              Folge mir auf LinkedIn oder schreibe mir eine E-Mail und wir
-              treffen uns auf einen echten oder virtuellen Kaffee.
+              {translations.description}
             </p>
           </div>
           <div className="lg:pl-16">
@@ -31,7 +30,7 @@ export function FreeChapters() {
               rel="noopener noreferrer"
               className="flex w-full max-w-xs items-center justify-center rounded-lg bg-white px-6 py-3 text-xl font-bold text-teal-800 hover:bg-teal-100"
             >
-              Connect on LinkedIn
+              {translations.linkedinButton}
             </a>
           </div>
           {/* <form className="lg:pl-16">

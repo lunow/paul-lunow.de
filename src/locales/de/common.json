@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "title": "Paul K. Lunow",
+    "description": "Entdecke Riaru, den Debütroman von Paul K. Lunow. Ein packender Cyber-Roman, der die Geheimnisse von Tech-Konzernen und die Macht von Metadaten enthüllt. Jetzt vorbestellen!"
+  },
+  "hero": {
+    "testimonial": "Dieses Buch ist spannend und leicht verständlich. Ich liebe es!",
+    "testimonialAuthor": "Olga",
+    "testimonialRole": "technisch weniger versierte Leserin, Künstlerin",
+    "title": "Dein Blick hinter die Kulissen",
+    "subtitle": "Riaru ist der Debütroman von Paul K. Lunow und gibt einen Einblick in die Welt der Tech-Unternehmen."
+  },
+  "welcome": {
+    "title": "Herzlich Willkommen",
+    "greeting": "Hi, ich bin Paul. Und Du bist auf meiner persönlichen Webseite gelandet.",
+    "story1": "Schon als Kind hatte ich den Traum, Schriftsteller zu werden.",
+    "story1Text": "Dieser Wunsch hat mich dazu inspiriert, ein Literaturportal zu programmieren – ein Ort, an dem ich und meine Freund:innen während der Schulzeit unsere Ideen und Gedanken teilen konnten. Aus diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche, in denen ich in nahezu jeder vorstellbaren Rolle rund um Technologie tätig war. Nun ist mein Kindheitstraum wahr geworden: Im Januar 2025 erschien mein erster Roman, Riaru.",
+    "story2": "Heute lebe ich an der Schnittstelle von Technologie, Führung und Kreativität.",
+    "story2Text": "Als CTO bei Vention unterstütze ich Unternehmen dabei, erfolgreiche Technologieprojekte umzusetzen. In meinem Podcast teile ich mein Wissen über Tech-Produkte und Leadership. Zudem begleite ich als Mentor und Berater Teams und Unternehmen, Orientierung in der digitalen Welt zu finden.",
+    "story3": "Diese Website spiegelt alle Facetten meiner Arbeit und Leidenschaft wider. Egal, ob Du mein Buch vorbestellen möchtest, nach inspirierenden Podcast-Folgen suchst oder auf der Suche nach einem Sparringspartner für Deine digitalen Herausforderungen bist – ich freue mich auf Deine Nachricht und Dein Feedback.",
+    "cta": "Lass uns ins Gespräch kommen!",
+    "ctaText": "Folge mir auf LinkedIn oder Instagram, oder schreib mir eine Nachricht – ich freue mich, von Dir zu hören."
+  },
+  "work": {
+    "title": "Arbeit",
+    "heading": "Engineering AI peace of mind",
+    "description": "Bei Vention darf ich als CTO Unternehmen unterstützen, erfolgreiche Technologieprojekte umzusetzen. Mit der Expertise von über 3000 Entwickler:innen können wir jedes Projekt zum Erfolg führen.",
+    "plan1": {
+      "name": "Check the Website",
+      "description": "Schau Dich um und finde heraus ob unser Angebot zu Dir passt.",
+      "href": "https://ventionteams.com/de/",
+      "features": [
+        "Engineering Peace of Mind",
+        "Over 3000 Developers",
+        "100% Focus on Tech"
+      ]
+    },
+    "plan2": {
+      "name": "Talk to sales",
+      "description": "Ich habe wunderbare Sales Kollegen, die mit Dir über Dein Projekt sprechen.",
+      "href": "https://ventionteams.com/de/kontakt",
+      "features": [
+        "Nur 2 Wochen bis zum Kick-off",
+        "Technologie Match und Cultural fit",
+        "30 Tage ramp down, wenn nötig",
+        "CTO Leadership support",
+        "Signiertes Exemplar meines Buches*"
+      ]
+    },
+    "disclaimer": "(*OK, das muss ich noch besprechen)"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "heading": "Paul K. Lunow –",
+    "subtitle": "CTO at Vention GmbH.",
+    "description": "Ich freue mich, von Dir zu hören! Auf dieser Seite habe ich zusammengefasst, was mich antreibt, inspiriert und ausmacht. Wenn Du Fragen hast oder den Austausch suchst, erreichst Du mich per E-Mail oder über meine sozialen Kanäle. Hier sind ein paar gute Gründe, warum Du mir schreiben könntest:",
+    "reasons": [
+      "<span class=\"font-semibold\">Du hast eine neue Start-up- oder Projektidee</span> und suchst einen Sparringspartner für die Umsetzung.",
+      "<span class=\"font-semibold\">Dein Team braucht Unterstützung,</span> um Projekte effizient voranzutreiben.",
+      "<span class=\"font-semibold\">Du möchtest ein signiertes Exemplar meines Buchs</span> oder ein Interview mit mir führen.",
+      "<span class=\"font-semibold\">Für Deine Veranstaltung suchst Du einen Speaker</span> oder Workshop-Leiter.",
+      "<span class=\"font-semibold\">Du hast Feedback</span> zu meiner Arbeit, meiner Website oder möchtest einfach in Kontakt treten."
+    ],
+    "impressum": "Impressum:",
+    "impressumText": "Auf dieser Seite werden keine personenbezogenen Daten gespeichert – deshalb musstest Du auch kein nerviges Cookie-Banner wegklicken. Diese Seite dient ausschließlich dazu, mich und meine Arbeit vorzustellen. Gemäß Telemediengesetz stehe ich als verantwortliche Person für den Inhalt dieser Website ein."
+  },
+  "testimonials": {
+    "testimonial1": {
+      "text": "Typisch Paul: Schnell, präzise, lustig und immer mit wertvollen Insights.",
+      "author": "Tim, technisch versierter Leser",
+      "role": "Creative Director"
+    },
+    "testimonial2": {
+      "text": "I am listening now your Product & Cake podcast and you really practice what you preach, Paul. I find that very honest.",
+      "author": "Gabriel",
+      "role": "Full Stack Engineer"
+    }
+  },
+  "language": {
+    "switchToEnglish": "Switch to English",
+    "switchToGerman": "Zur deutschen Version wechseln"
+  },
+  "introduction": {
+    "title": "Willkommen im modernsten Unternehmen der Welt",
+    "paragraph1": "Riaru ist das global erfolgreichste Unternehmen: ein Online-Multiplayer-Game, das seinen Usern ermöglicht, in fremde Welten einzutauchen, sich selbst zu verwirklichen und sogar das eigene Business gewinnbringend zu vermarkten. Die Welt für jeden zu einem besseren Ort zu machen, ist das erklärte Ziel von Riaru.",
+    "paragraph2": "Mic möchte unbedingt an dieser idealistischen Idee mitwirken. Doch selbst ein exzellenter Studienabschluss in Softwareentwicklung ist unbedeutend, wenn man ihn in einer argentinischen Kleinstadt erworben hat. Der Karrieresprung nach Europa scheint aussichtslos. Doch dann wird Tuuli, die Gründerin von Riaru, auf Mic aufmerksam. Der Job im Berliner Headquarter gleicht einem Traum. Bis Mic erwacht.",
+    "paragraph3": "Paul K. Lunow, selbst Gründer und Programmierer, gewährt in diesem spannenden Cyber-Roman tiefe Einblicke in die Struktur von Tech-Konzernen und den Umgang mit Metadaten. Mit seinem umfangreichen Hintergrundwissen macht er uns begreiflich, welch komplexe digitalen Abläufe in den Systemen hinter unseren Monitoren geschehen.",
+    "stats": {
+      "pages": "Seitenzahl",
+      "language": "Sprache",
+      "publisher": "Herausgeber",
+      "releaseDate": "Erscheinungstermin"
+    }
+  },
+  "preorder": {
+    "amazonButton": "Bestellen auf Amazon*",
+    "learnMoreButton": "Mehr erfahren",
+    "disclaimer": "* oder im lokalen Buchandel um die Ecke!"
+  },
+  "freeChapters": {
+    "title": "Sprechen wir über Dein Projekt",
+    "description": "Folge mir auf LinkedIn oder schreibe mir eine E-Mail und wir treffen uns auf einen echten oder virtuellen Kaffee.",
+    "linkedinButton": "Connect on LinkedIn"
+  },
+  "navbar": {
+    "sections": [
+      {
+        "id": "welcome",
+        "title": "Herzlich Willkommen",
+        "titleShort": "Hallo"
+      },
+      {
+        "id": "podcasts",
+        "title": "Podcast",
+        "titleShort": "Podcast"
+      },
+      {
+        "id": "mentoring",
+        "title": "Beratung und Mentoring",
+        "titleShort": "Mentor"
+      },
+      {
+        "id": "work",
+        "title": "Arbeit",
+        "titleShort": "Arbeit"
+      },
+      {
+        "id": "contact",
+        "title": "Kontakt",
+        "titleShort": "Kontakt"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonial1": {
+      "text": "Typisch Paul: Schnell, präzise, lustig und immer mit wertvollen Insights.",
+      "author": "Tim, technisch versierter Leser",
+      "role": "Creative Director"
+    },
+    "testimonial2": {
+      "text": "I am listening now your Product & Cake podcast and you really practice what you preach, Paul. I find that very honest.",
+      "author": "Gabriel",
+      "role": "Full Stack Engineer"
+    },
+    "title": "Nette Worte aus meinem Umfeld...",
+    "description": "Ich bin so glücklich über die vielen tollen Menschen aus der ganzen Welt mit denen ich zusammenarbeiten durfte und darf. Hier sind einige Zitate, leicht gekürzt und anonymisiert. Ich danke euch allen!",
+    "readMore": "Weitere Testimonials lesen",
+    "allTestimonials": [
+      { "content": "Paul ist fachlich top, aber noch bemerkenswerter ist seine unprätentiöse, deeskalierende und immer lösungsorientierte Art.", "author": { "name": "Justus", "role": "Chief Content Officer" } },
+      { "content": "Deine Beiträge in der Peer‑Leader‑Gruppe sind IMMER wertvoll, die Diskussionen sind immer großartig!", "author": { "name": "Tamari", "role": "Head of Learning Strategy" } },
+      { "content": "Ich kann mich auf deine Entscheidungen und Führung verlassen, und du kommunizierst klar und transparent.", "author": { "name": "Moutaz", "role": "Senior Full Stack Engineer" } },
+      { "content": "Vielen Dank auch nochmal für deinen Impuls. Dieser war wirklich sehr gelungen – wir konnten einiges daraus mitnehmen.", "author": { "name": "Antonio", "role": "Vorstand" } },
+      { "content": "Bleib in den Vorträgen so ehrlich, was auch nicht funktioniert – das kam sehr gut an!", "author": { "name": "Julius", "role": "Sprecher des Vorstands" } },
+      { "content": "Mann, ich schwöre, ich mag dich so sehr und danke dir, dass du dich bei mir gemeldet hast – das bedeutet mir viel.", "author": { "name": "Mohammad", "role": "Senior Full Stack Engineer" } },
+      { "content": "Wir sprechen noch oft von dir und sind dir sehr dankbar, was du uns alles aufgebaut hast. Ohne dich wären wir nie so weit gekommen. Komm bald mal wieder bei uns vorbei!", "author": { "name": "Ulla", "role": "Corporate Communications" } },
+      { "content": "Jedes Team kann super happy sein Dich und Deine nice, neugierige Energie an Bord zu haben.", "author": { "name": "Katharina", "role": "HR Manager" } },
+      { "content": "Merke immer wieder wie sehr es mir Spaß macht mit dir zusammenzuarbeiten. Pragmatisch, schnell, auf Augenhöhe.", "author": { "name": "Luisa", "role": "Head of Marketing" } },
+      { "content": "Ich finde deine Ideen sehr spannend, ein bisschen unkonventionell und sehr inspirierend und zukunftsorientiert.", "author": { "name": "Eva", "role": "Head of Agile Transformation" } },
+      { "content": "Mit was für einer Ruhe und Leichtigkeit du die Fragen stellst. Und wirklich gute Fragen - das ist eine Kunst.", "author": { "name": "Miriam", "role": "Founder" } },
+      { "content": "Ein neues Team aus Externen und Internen aus mehreren Teams aufzubauen, ist ziemlich herausfordernd. Er hat es geschafft, uns alle in kurzer Zeit um dasselbe Ziel zu vereinen – das finde ich sehr beeindruckend.", "author": { "name": "Ghonche", "role": "Lead Product Manager" } },
+      { "content": "Es ist toll jemandem wie dich mit Unternehmergeist sowie echtem Drive für unsere Kunden UND unsere Umwelt UND unsere Teams an Board zu haben!", "author": { "name": "Patricia", "role": "CEO" } }
+    ]
+  },
+  "podcasts": {
+    "title": "Podcast",
+    "heading": "Product&Cake Podcast ist der perfekte Begleiter in der wilden Product-Tech-Welt.",
+    "description": "Ghonche und ich haben uns bei mobile.de im Podcast Studio getroffen. Niemand brauchte gerade das Studio und wir hatten Kuchen dabei, also haben wir aus Spaß einen Podcast aufgenommen. Das Feedback im internen Chat war überwältigend. Genau so wie der Spaß den wir bei der Aufnahme hatten. Also haben wir weiter gemacht!",
+    "subscribeText": "Subscribe on your favorite podcast platform to get the latest episodes.",
+    "buttons": {
+      "website": "Website",
+      "apple": "Apple",
+      "spotify": "Spotify"
+    }
+  },
+  "mentoring": {
+    "title": "Beratung und Mentoring",
+    "heading": "Binde mich in dein Team ein! Ich helfe Wege zu finden in dem weiten Meer aus Möglichkeiten.",
+    "description": "Als Gründer mehrerer Firmen, Teamleiter und Strategieberater habe ich in den letzten Jahren umfassende Erfahrungen gesammelt: vom Aufbau und Führen motivierter Teams über das erfolgreiche Pitchen von Ideen bis hin zur Umsetzung skalierbarer Lösungen. Dieses Wissen gebe ich heute weiter – an Menschen, Teams und Unternehmen, die Orientierung suchen, Herausforderungen bewältigen oder ihre Ziele schneller erreichen wollen.",
+    "resources": [
+      {
+        "title": "Erfahrung",
+        "emoji": "🏆",
+        "description": "Fundierte Einblicke in Gründung, Wachstum und Leadership – gepaart mit praktischen Lösungen."
+      },
+      {
+        "title": "Klarheit",
+        "emoji": "💡",
+        "description": "Ich helfe Dir, schnelle Entscheidungen zu treffen und falsche Wege frühzeitig zu erkennen."
+      },
+      {
+        "title": "Perspektive",
+        "emoji": "🎯",
+        "description": "Frische Impulse, die Dir helfen, komplexe Herausforderungen aus einem neuen Blickwinkel zu sehen."
+      }
+    ],
+    "activities": [
+      {
+        "title": "Start-ups",
+        "emoji": "🚀",
+        "description": "Als Sparring Partner, Coach und Zuhörer darf ich einige Gründerinnen und Gründer in der spannendsten Phase ihres Lebens begleiten."
+      },
+      {
+        "title": "Mentoring",
+        "emoji": "🤝",
+        "description": "Als Mentor bei Tech4Germany unterstütze ich junge Talente dabei, unsere Regierung digitaler zu machen!"
+      },
+      {
+        "title": "Advisory Board",
+        "emoji": "✨",
+        "description": "Der Blick von Außen ist für jedes Unternehmen wichtig. Als Mitglied im Advisory Board bringe ich meine Erfahrungen ein."
+      }
+    ],
+    "cta": "Es begeistert mich immer wieder, Menschen und Unternehmen dabei zu unterstützen, das Beste aus sich herauszuholen – motiviert, effizient und mit klarem Fokus auf die Zukunft. Wenn Du Dich angesprochen fühlst, lass uns gemeinsam herausfinden, wie ich Dich oder Dein Team unterstützen kann. Geträu meinem Motto: \"The answer to how is yes!\""
+  }
+}

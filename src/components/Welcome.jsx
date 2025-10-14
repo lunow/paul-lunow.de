@@ -35,7 +35,7 @@ const tableOfContents = {
   },
 }
 
-export function Welcome() {
+export function Welcome({ translations }) {
   return (
     <section
       id="welcome"
@@ -44,12 +44,11 @@ export function Welcome() {
     >
       <Container>
         <SectionHeading number="1" id="welcome-title">
-          Herzlich Willkommen
+          {translations.title}
         </SectionHeading>
 
         <p className="mt-8 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
-          Hi, ich bin Paul. Und Du bist auf meiner persönlichen Webseite
-          gelandet.
+          {translations.greeting}
         </p>
       </Container>
 
@@ -70,34 +69,18 @@ export function Welcome() {
             <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 <span className="font-semibold">
-                  Schon als Kind hatte ich den Traum, Schriftsteller zu werden.
+                  {translations.story1}
                 </span>{' '}
-                Dieser Wunsch hat mich dazu inspiriert, ein Literaturportal zu
-                programmieren – ein Ort, an dem ich und meine Freund:innen
-                während der Schulzeit unsere Ideen und Gedanken teilen konnten.
-                Aus diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche,
-                in denen ich in nahezu jeder vorstellbaren Rolle rund um
-                Technologie tätig war. Nun ist mein Kindheitstraum wahr geworden: Im
-                Januar 2025 erschien mein erster Roman, Riaru.
+                {translations.story1Text}
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 <span className="font-semibold">
-                  Heute lebe ich an der Schnittstelle von Technologie, Führung
-                  und Kreativität.
+                  {translations.story2}
                 </span>{' '}
-                Als CTO bei Vention unterstütze ich Unternehmen dabei, erfolgreiche 
-                Technologieprojekte umzusetzen. In
-                meinem Podcast teile ich mein Wissen über Tech-Produkte und
-                Leadership. Zudem begleite ich als Mentor und Berater Teams und
-                Unternehmen, Orientierung in der digitalen Welt zu finden.
+                {translations.story2Text}
               </p>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
-                Diese Website spiegelt alle Facetten meiner Arbeit und
-                Leidenschaft wider. Egal, ob Du mein Buch vorbestellen möchtest,
-                nach inspirierenden Podcast-Folgen suchst oder auf der Suche
-                nach einem Sparringspartner für Deine digitalen
-                Herausforderungen bist – ich freue mich auf Deine Nachricht und
-                Dein Feedback.
+                {translations.story3}
               </p>
             </div>
           </div>
@@ -107,9 +90,8 @@ export function Welcome() {
       <Container>
         <div className="mt-8 bg-slate-50 py-12 sm:rounded-6xl">
           <p className="px-8 tracking-tight text-slate-900 md:text-center">
-            <span className="font-semibold">Lass uns ins Gespräch kommen!</span>{' '}
-            Folge mir auf LinkedIn oder Instagram, oder schreib mir eine
-            Nachricht – ich freue mich, von Dir zu hören.
+            <span className="font-semibold">{translations.cta}</span>{' '}
+            {translations.ctaText}
           </p>
           <ContactLinks></ContactLinks>
         </div>

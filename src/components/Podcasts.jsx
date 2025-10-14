@@ -136,7 +136,7 @@ const parseDuration = (duration) => {
   }
 }
 
-export function Podcasts() {
+export function Podcasts({ translations }) {
   const [episodes, setEpisodes] = useState([])
   const [isPlaying, setIsPlaying] = useState(-1)
   const [isLoading, setIsLoading] = useState(-1)
@@ -221,18 +221,13 @@ export function Podcasts() {
     >
       <Container>
         <SectionHeading number="2" id="podcasts-title">
-          Podcast
+          {translations.title}
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Product&amp;Cake Podcast ist der perfekte Begleiter in der wilden
-          Product-Tech-Welt.
+          {translations.heading}
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Ghonche und ich haben uns bei mobile.de im Podcast Studio getroffen.
-          Niemand brauchte gerade das Studio und wir hatten Kuchen dabei,
-          also haben wir aus Spaß einen Podcast aufgenommen. Das Feedback im
-          internen Chat war überwältigend. Genau so wie der Spaß den wir bei der
-          Aufnahme hatten. Also haben wir weiter gemacht!
+          {translations.description}
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -297,8 +292,7 @@ export function Podcasts() {
 
       <Container>
         <p className="mt-4 pt-10 text-center text-lg tracking-tight text-slate-700">
-          Subscribe on your favorite podcast platform to get the latest
-          episodes.
+          {translations.subscribeText}
         </p>
         <div className="mt-4 flex justify-center space-x-4">
           <Button
@@ -308,7 +302,7 @@ export function Podcasts() {
             variant="solid"
             color="blue"
           >
-            Website
+            {translations.buttons.website}
           </Button>
 
           <Button
@@ -317,7 +311,7 @@ export function Podcasts() {
             target="_blank"
             variant="outline"
           >
-            Apple
+            {translations.buttons.apple}
           </Button>
 
           <Button
@@ -326,7 +320,7 @@ export function Podcasts() {
             target="_blank"
             variant="outline"
           >
-            Spotify
+            {translations.buttons.spotify}
           </Button>
         </div>
       </Container>

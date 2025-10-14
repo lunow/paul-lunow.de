@@ -2,31 +2,11 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
+import { LanguageSwitcher } from './LanguageSwitcher'
+import { useTranslations } from '@/components/LocaleProvider'
 import clsx from 'clsx'
 
-const sections = [
-  {
-    id: 'welcome',
-    title: (
-      <>
-        <span className="hidden lg:inline">Herzlich Willkommen</span>
-        <span className="lg:hidden">Hallo</span>
-      </>
-    ),
-  },
-  { id: 'podcasts', title: 'Podcast' },
-  {
-    id: 'mentoring',
-    title: (
-      <>
-        <span className="hidden lg:inline">Beratung und Mentoring</span>
-        <span className="lg:hidden">Mentor</span>
-      </>
-    ),
-  },
-  { id: 'work', title: 'Arbeit' },
-  { id: 'contact', title: 'Kontakt' },
-]
+// This will be replaced by translations
 
 function MenuIcon({ open, ...props }) {
   return (
@@ -46,10 +26,21 @@ function MenuIcon({ open, ...props }) {
   )
 }
 
-export function NavBar() {
+export function NavBar({ translations }) {
+  const sections = translations.sections.map(section => ({
+    id: section.id,
+    title: (
+      <>
+        <span className="hidden lg:inline">{section.title}</span>
+        <span className="lg:hidden">{section.titleShort}</span>
+      </>
+    ),
+  }))
+  
   let navBarRef = useRef(null)
   let [activeIndex, setActiveIndex] = useState(null)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
+  let [stuckAtTop, setStuckAtTop] = useState(false)
 
   useEffect(() => {
     function updateActiveIndex() {
@@ -85,17 +76,35 @@ export function NavBar() {
 
     updateActiveIndex()
 
+    function onScroll() {
+      // When user scrolls down even a little, move navbar to the top and stick it
+      if (window.scrollY > 10) {
+        setStuckAtTop(true)
+      } else {
+        setStuckAtTop(false)
+      }
+      updateActiveIndex()
+    }
+
     window.addEventListener('resize', updateActiveIndex)
-    window.addEventListener('scroll', updateActiveIndex, { passive: true })
+    window.addEventListener('scroll', onScroll, { passive: true })
 
     return () => {
       window.removeEventListener('resize', updateActiveIndex)
-      window.removeEventListener('scroll', updateActiveIndex)
+      window.removeEventListener('scroll', onScroll)
     }
   }, [])
 
+  const t = useTranslations()
+
   return (
-    <div ref={navBarRef} className="sticky top-0 z-50">
+    <div
+      ref={navBarRef}
+      className={clsx(
+        'z-50 w-full transition-all duration-300',
+        stuckAtTop ? 'sticky top-0' : 'fixed bottom-0 left-0 right-0'
+      )}
+    >
       <Popover className="sm:hidden">
         {({ open }) => (
           <>
@@ -154,6 +163,9 @@ export function NavBar() {
                   </span>
                 </PopoverButton>
               ))}
+              <div className="mt-2 border-t border-slate-200 pt-2 px-4">
+                <LanguageSwitcher variant="pill" />
+              </div>
             </PopoverPanel>
             <div className="absolute inset-x-0 bottom-full z-10 h-4 bg-white" />
           </>
@@ -180,7 +192,11 @@ export function NavBar() {
             </li>
           ))}
         </ol>
+        <div className="absolute right-4 top-1/2 -translate-y-1/2">
+          <LanguageSwitcher variant="pill" />
+        </div>
       </div>
+      {/* Mobile floating removed; language switcher appears in popover below */}
     </div>
   )
 }

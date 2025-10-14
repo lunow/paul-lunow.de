@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
+import clsx from 'clsx'
 
-export function Testimonial({ id, author, children }) {
+export function Testimonial({ id, author, children, locale = 'en' }) {
   const emojis = [
     '👤',
     '🧑',
@@ -45,7 +46,7 @@ export function Testimonial({ id, author, children }) {
           <div className="flex text-slate-900 sm:justify-center">
             <StarRating />
           </div>
-          <blockquote className="mt-10 font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-center">
+          <blockquote className={clsx('mt-10 font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-center')}>
             {children}
           </blockquote>
           <figcaption className="mt-10 flex items-center sm:justify-center">
