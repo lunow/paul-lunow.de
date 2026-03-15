@@ -138,6 +138,7 @@ const parseDuration = (duration) => {
 
 export function Podcasts({ translations }) {
   const [episodes, setEpisodes] = useState([])
+  const [loadingEpisodes, setLoadingEpisodes] = useState(true)
   const [isPlaying, setIsPlaying] = useState(-1)
   const [isLoading, setIsLoading] = useState(-1)
   const [currentTime, setCurrentTime] = useState({ minutes: 0, seconds: 0 })
@@ -145,8 +146,14 @@ export function Podcasts({ translations }) {
 
   useEffect(() => {
     const getEpisodes = async () => {
-      const latestEpisodes = await fetchLatestEpisodes()
-      setEpisodes(latestEpisodes)
+      try {
+        const latestEpisodes = await fetchLatestEpisodes()
+        setEpisodes(latestEpisodes)
+      } catch {
+        // Fall back to static episodes
+      } finally {
+        setLoadingEpisodes(false)
+      }
     }
 
     getEpisodes()
@@ -157,13 +164,18 @@ export function Podcasts({ translations }) {
       setIsLoading(-1)
     }
 
+    let timeUpdateRafId = null
     const handleTimeUpdate = () => {
-      const audioElement = audioRef.current
-      if (audioElement) {
-        const currentMinutes = Math.floor(audioElement.currentTime / 60)
-        const currentSeconds = Math.floor(audioElement.currentTime % 60)
-        setCurrentTime({ minutes: currentMinutes, seconds: currentSeconds })
-      }
+      if (timeUpdateRafId !== null) return
+      timeUpdateRafId = requestAnimationFrame(() => {
+        const audioElement = audioRef.current
+        if (audioElement) {
+          const currentMinutes = Math.floor(audioElement.currentTime / 60)
+          const currentSeconds = Math.floor(audioElement.currentTime % 60)
+          setCurrentTime({ minutes: currentMinutes, seconds: currentSeconds })
+        }
+        timeUpdateRafId = null
+      })
     }
 
     const audioElement = audioRef.current
@@ -181,6 +193,7 @@ export function Podcasts({ translations }) {
   }, [])
 
   const handlePlayAudio = (i, link) => {
+    if (!link) return
     setIsLoading(i)
     if (audioRef.current) {
       if (audioRef.current.src !== link) {
@@ -235,7 +248,7 @@ export function Podcasts({ translations }) {
           role="list"
           className="grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4"
         >
-          {episodes.map((video, index) => (
+          {(episodes.length > 0 ? episodes : videos).map((video, index) => (
             <li
               key={video.title}
               className="cursor-pointer [counter-increment:video]"

@@ -9,32 +9,6 @@ import { SectionHeading } from '@/components/SectionHeading'
 import { ContactLinks } from '@/components/ContactLinks'
 import authorImage from '@/images/lunow-lunow-293.jpeg'
 
-const tableOfContents = {
-  'Getting started': {
-    'Getting started': 1,
-    'Intro to Figma': 15,
-    'Setting up your first artboard': 20,
-  },
-  Fundamentals: {
-    'Strokes and fills': 21,
-    'End points': 22,
-    'Bezier curves': 26,
-    'Designing on a grid': 31,
-    'Vector shapes': 45,
-  },
-  'Boolean operations': {
-    'Combining shapes': 50,
-    'Subtracting shapes': 57,
-    'Intersecting shapes': 66,
-    Flattening: 78,
-  },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
-  },
-}
-
 export function Welcome({ translations }) {
   return (
     <section

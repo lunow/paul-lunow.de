@@ -22,7 +22,7 @@ export function Contact({ translations }) {
             <Image
               className="absolute inset-0 h-full w-full object-cover"
               src={authorImage}
-              alt=""
+              alt="Paul K. Lunow, CTO at Vention GmbH"
               sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
             />
           </div>

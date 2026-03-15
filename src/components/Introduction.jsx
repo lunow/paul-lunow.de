@@ -53,9 +53,9 @@ export function Introduction({ translations, preorderTranslations }) {
       className="pb-16 pt-20 sm:pb-20 md:pt-36 lg:py-32"
     >
       <Container className="text-lg tracking-tight text-slate-700">
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+        <h2 className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
           {translations.title}
-        </p>
+        </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           {translations.paragraph1}
         </p>

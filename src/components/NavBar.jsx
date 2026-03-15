@@ -76,14 +76,14 @@ export function NavBar({ translations }) {
 
     updateActiveIndex()
 
+    let rafId = null
     function onScroll() {
-      // When user scrolls down even a little, move navbar to the top and stick it
-      if (window.scrollY > 10) {
-        setStuckAtTop(true)
-      } else {
-        setStuckAtTop(false)
-      }
-      updateActiveIndex()
+      if (rafId !== null) return
+      rafId = requestAnimationFrame(() => {
+        setStuckAtTop(window.scrollY > 10)
+        updateActiveIndex()
+        rafId = null
+      })
     }
 
     window.addEventListener('resize', updateActiveIndex)

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Paul K. Lunow",
-    "description": "Entdecke Riaru, den Debütroman von Paul K. Lunow. Ein packender Cyber-Roman, der die Geheimnisse von Tech-Konzernen und die Macht von Metadaten enthüllt. Jetzt vorbestellen!"
+    "title": "Paul K. Lunow – Autor, CTO & Mentor | Debütroman Riaru",
+    "description": "Paul K. Lunow: Autor des Cyber-Romans Riaru, CTO bei Vention, Podcast-Host und Mentor. Tech-Leadership, Beratung und ein packender Roman über die digitale Welt."
   },
   "hero": {
     "testimonial": "Dieses Buch ist spannend und leicht verständlich. Ich liebe es!",
@@ -93,9 +93,9 @@
     }
   },
   "preorder": {
-    "amazonButton": "Bestellen auf Amazon*",
+    "amazonButton": "Auf Amazon kaufen*",
     "learnMoreButton": "Mehr erfahren",
-    "disclaimer": "* oder im lokalen Buchandel um die Ecke!"
+    "disclaimer": "* oder im lokalen Buchhandel um die Ecke!"
   },
   "freeChapters": {
     "title": "Sprechen wir über Dein Projekt",
@@ -160,6 +160,9 @@
       { "content": "Ein neues Team aus Externen und Internen aus mehreren Teams aufzubauen, ist ziemlich herausfordernd. Er hat es geschafft, uns alle in kurzer Zeit um dasselbe Ziel zu vereinen – das finde ich sehr beeindruckend.", "author": { "name": "Ghonche", "role": "Lead Product Manager" } },
       { "content": "Es ist toll jemandem wie dich mit Unternehmergeist sowie echtem Drive für unsere Kunden UND unsere Umwelt UND unsere Teams an Board zu haben!", "author": { "name": "Patricia", "role": "CEO" } }
     ]
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
   },
   "podcasts": {
     "title": "Podcast",

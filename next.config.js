@@ -5,15 +5,6 @@ const nextConfig = {
         unoptimized: true,
     },
     trailingSlash: true,
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/en',
-                permanent: false,
-            },
-        ]
-    },
 }
 
 module.exports = nextConfig
