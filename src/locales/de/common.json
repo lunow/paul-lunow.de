@@ -17,7 +17,7 @@
     "story1Text": "Dieser Wunsch hat mich dazu inspiriert, ein Literaturportal zu programmieren – ein Ort, an dem ich und meine Freund:innen während der Schulzeit unsere Ideen und Gedanken teilen konnten. Aus diesem Traum wurde eine Reise: 20 Jahre in der Tech-Branche, in denen ich in nahezu jeder vorstellbaren Rolle rund um Technologie tätig war. Nun ist mein Kindheitstraum wahr geworden: Im Januar 2025 erschien mein erster Roman, Riaru.",
     "story2": "Heute lebe ich an der Schnittstelle von Technologie, Führung und Kreativität.",
     "story2Text": "Als CTO bei Vention unterstütze ich Unternehmen dabei, erfolgreiche Technologieprojekte umzusetzen. In meinem Podcast teile ich mein Wissen über Tech-Produkte und Leadership. Zudem begleite ich als Mentor und Berater Teams und Unternehmen, Orientierung in der digitalen Welt zu finden.",
-    "story3": "Diese Website spiegelt alle Facetten meiner Arbeit und Leidenschaft wider. Egal, ob Du mein Buch vorbestellen möchtest, nach inspirierenden Podcast-Folgen suchst oder auf der Suche nach einem Sparringspartner für Deine digitalen Herausforderungen bist – ich freue mich auf Deine Nachricht und Dein Feedback.",
+    "story3": "Diese Website spiegelt alle Facetten meiner Arbeit und Leidenschaft wider. Egal, ob Du mein Buch bestellen möchtest, nach inspirierenden Podcast-Folgen suchst oder auf der Suche nach einem Sparringspartner für Deine digitalen Herausforderungen bist – ich freue mich auf Deine Nachricht und Dein Feedback.",
     "cta": "Lass uns ins Gespräch kommen!",
     "ctaText": "Folge mir auf LinkedIn oder Instagram, oder schreib mir eine Nachricht – ich freue mich, von Dir zu hören."
   },
@@ -85,6 +85,7 @@
     "paragraph1": "Riaru ist das global erfolgreichste Unternehmen: ein Online-Multiplayer-Game, das seinen Usern ermöglicht, in fremde Welten einzutauchen, sich selbst zu verwirklichen und sogar das eigene Business gewinnbringend zu vermarkten. Die Welt für jeden zu einem besseren Ort zu machen, ist das erklärte Ziel von Riaru.",
     "paragraph2": "Mic möchte unbedingt an dieser idealistischen Idee mitwirken. Doch selbst ein exzellenter Studienabschluss in Softwareentwicklung ist unbedeutend, wenn man ihn in einer argentinischen Kleinstadt erworben hat. Der Karrieresprung nach Europa scheint aussichtslos. Doch dann wird Tuuli, die Gründerin von Riaru, auf Mic aufmerksam. Der Job im Berliner Headquarter gleicht einem Traum. Bis Mic erwacht.",
     "paragraph3": "Paul K. Lunow, selbst Gründer und Programmierer, gewährt in diesem spannenden Cyber-Roman tiefe Einblicke in die Struktur von Tech-Konzernen und den Umgang mit Metadaten. Mit seinem umfangreichen Hintergrundwissen macht er uns begreiflich, welch komplexe digitalen Abläufe in den Systemen hinter unseren Monitoren geschehen.",
+    "audiobook": "Riaru gibt es jetzt auch als Hörbuch: produziert von der Lauscherlounge und gelesen von Rebecca Veil – erhältlich auf Audible.",
     "stats": {
       "pages": "Seitenzahl",
       "language": "Sprache",
@@ -94,6 +95,7 @@
   },
   "preorder": {
     "amazonButton": "Auf Amazon kaufen*",
+    "audibleButton": "Hörbuch auf Audible",
     "learnMoreButton": "Mehr erfahren",
     "disclaimer": "* oder im lokalen Buchhandel um die Ecke!"
   },
@@ -105,14 +107,14 @@
   "navbar": {
     "sections": [
       {
-        "id": "welcome",
-        "title": "Herzlich Willkommen",
-        "titleShort": "Hallo"
-      },
-      {
         "id": "podcasts",
         "title": "Podcast",
         "titleShort": "Podcast"
+      },
+      {
+        "id": "work",
+        "title": "Arbeit",
+        "titleShort": "Arbeit"
       },
       {
         "id": "mentoring",
@@ -120,9 +122,9 @@
         "titleShort": "Mentor"
       },
       {
-        "id": "work",
-        "title": "Arbeit",
-        "titleShort": "Arbeit"
+        "id": "writing",
+        "title": "Schreiben",
+        "titleShort": "Buch"
       },
       {
         "id": "contact",
@@ -158,7 +160,9 @@
       { "content": "Ich finde deine Ideen sehr spannend, ein bisschen unkonventionell und sehr inspirierend und zukunftsorientiert.", "author": { "name": "Eva", "role": "Head of Agile Transformation" } },
       { "content": "Mit was für einer Ruhe und Leichtigkeit du die Fragen stellst. Und wirklich gute Fragen - das ist eine Kunst.", "author": { "name": "Miriam", "role": "Founder" } },
       { "content": "Ein neues Team aus Externen und Internen aus mehreren Teams aufzubauen, ist ziemlich herausfordernd. Er hat es geschafft, uns alle in kurzer Zeit um dasselbe Ziel zu vereinen – das finde ich sehr beeindruckend.", "author": { "name": "Ghonche", "role": "Lead Product Manager" } },
-      { "content": "Es ist toll jemandem wie dich mit Unternehmergeist sowie echtem Drive für unsere Kunden UND unsere Umwelt UND unsere Teams an Board zu haben!", "author": { "name": "Patricia", "role": "CEO" } }
+      { "content": "Es ist toll jemandem wie dich mit Unternehmergeist sowie echtem Drive für unsere Kunden UND unsere Umwelt UND unsere Teams an Board zu haben!", "author": { "name": "Patricia", "role": "CEO" } },
+      { "content": "Dein proaktiver Ansatz, dein Netzwerken und dein Engagement im Business Development werden wirklich geschätzt und haben bereits sichtbare Wirkung gezeigt.", "author": { "name": "Kate", "role": "Sales Director" } },
+      { "content": "Ich kann gar nicht sagen, wie sehr ich unsere gemeinsame Zeit heute schätze – das war eine Erfahrung, die ich so schnell nicht vergessen werde. Du kannst wirklich stolz auf das Umfeld sein, das du schaffst – großartig!", "author": { "name": "Ben", "role": "Podcast-Gast" } }
     ]
   },
   "footer": {

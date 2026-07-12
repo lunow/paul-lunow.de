@@ -17,7 +17,7 @@
     "story1Text": "This desire inspired me to program a literature portal – a place where my friends and I could share our ideas and thoughts during school time. This dream became a journey: 20 years in the tech industry, in which I worked in almost every conceivable role around technology. Now my childhood dream has come true: In January 2025, my first novel, Riaru, was published.",
     "story2": "Today I live at the intersection of technology, leadership and creativity.",
     "story2Text": "As CTO at Vention, I help companies implement successful technology projects. In my podcast, I share my knowledge about tech products and leadership. I also accompany teams and companies as a mentor and consultant to find orientation in the digital world.",
-    "story3": "This website reflects all facets of my work and passion. Whether you want to pre-order my book, are looking for inspiring podcast episodes, or are looking for a sparring partner for your digital challenges – I look forward to your message and your feedback.",
+    "story3": "This website reflects all facets of my work and passion. Whether you want to order my book, are looking for inspiring podcast episodes, or are looking for a sparring partner for your digital challenges – I look forward to your message and your feedback.",
     "cta": "Let's get in touch!",
     "ctaText": "Follow me on LinkedIn or Instagram, or write me a message – I look forward to hearing from you."
   },
@@ -85,6 +85,7 @@
     "paragraph1": "Riaru is the most globally successful company: an online multiplayer game that allows its users to dive into foreign worlds, realize themselves and even profitably market their own business. Making the world a better place for everyone is Riaru's declared goal.",
     "paragraph2": "Mic desperately wants to contribute to this idealistic idea. But even an excellent degree in software development is meaningless when acquired in a small Argentine town. The career leap to Europe seems hopeless. But then Tuuli, the founder of Riaru, notices Mic. The job at the Berlin headquarters is like a dream. Until Mic wakes up.",
     "paragraph3": "Paul K. Lunow, himself a founder and programmer, provides deep insights into the structure of tech corporations and the handling of metadata in this exciting cyber novel. With his extensive background knowledge, he makes us understand what complex digital processes happen in the systems behind our monitors.",
+    "audiobook": "Riaru is now also available as an audiobook: produced by Lauscherlounge and read by Rebecca Veil – available on Audible.",
     "stats": {
       "pages": "Pages",
       "language": "Language",
@@ -94,6 +95,7 @@
   },
   "preorder": {
     "amazonButton": "Buy on Amazon*",
+    "audibleButton": "Audiobook on Audible",
     "learnMoreButton": "Learn more",
     "disclaimer": "* or at your local bookstore around the corner!"
   },
@@ -105,14 +107,14 @@
   "navbar": {
     "sections": [
       {
-        "id": "welcome",
-        "title": "Welcome",
-        "titleShort": "Hi"
-      },
-      {
         "id": "podcasts",
         "title": "Podcast",
         "titleShort": "Podcast"
+      },
+      {
+        "id": "work",
+        "title": "Work",
+        "titleShort": "Work"
       },
       {
         "id": "mentoring",
@@ -120,9 +122,9 @@
         "titleShort": "Mentor"
       },
       {
-        "id": "work",
-        "title": "Work",
-        "titleShort": "Work"
+        "id": "writing",
+        "title": "Writing",
+        "titleShort": "Writing"
       },
       {
         "id": "contact",
@@ -158,7 +160,9 @@
       { "content": "I find your ideas very exciting, a bit unconventional and very inspiring and future-oriented.", "author": { "name": "Eva", "role": "Head of Agile Transformation" } },
       { "content": "With what calm and ease you ask the questions. And really good questions - that's an art.", "author": { "name": "Miriam", "role": "Founder" } },
       { "content": "Building a new team consisting of externals and internals from multiple teams is rather challenging. He managed to bring all of us together around the same goal, which I find very impressive in such a short time.", "author": { "name": "Ghonche", "role": "Lead Product Manager" } },
-      { "content": "It's great to have someone like you with entrepreneurial spirit and real drive for our customers AND our environment AND our teams on board!", "author": { "name": "Patricia", "role": "CEO" } }
+      { "content": "It's great to have someone like you with entrepreneurial spirit and real drive for our customers AND our environment AND our teams on board!", "author": { "name": "Patricia", "role": "CEO" } },
+      { "content": "Your proactive approach, networking efforts, and involvement in business development are genuinely valued and have already made a visible impact.", "author": { "name": "Kate", "role": "Sales Director" } },
+      { "content": "I can't say how much I appreciate your time today, it really was an experience that I won't forget easily. You should be really proud of the environment you are making - it's really great stuff!", "author": { "name": "Ben", "role": "Podcast Guest" } }
     ]
   },
   "footer": {

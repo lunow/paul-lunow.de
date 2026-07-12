@@ -29,7 +29,10 @@ function Testimonial({ translations }) {
 
 export function Hero({ translations, preorderTranslations }) {
   return (
-    <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
+    <header
+      id="writing"
+      className="scroll-mt-14 overflow-hidden bg-slate-100 sm:scroll-mt-32 lg:bg-transparent lg:px-5"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
           <div className="absolute -bottom-12 -top-20 left-0 right-1/2 z-10 overflow-hidden rounded-br-6xl bg-black bg-cover bg-center text-white/10 md:bottom-8 lg:-inset-y-32 lg:left-[-100vw] lg:right-full lg:-mr-40">

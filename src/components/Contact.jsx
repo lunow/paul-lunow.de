@@ -27,7 +27,7 @@ export function Contact({ translations }) {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="author-title">
+            <SectionHeading number="6" id="author-title">
               {translations.title}
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">

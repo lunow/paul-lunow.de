@@ -16,7 +16,7 @@ export function Mentoring({ translations }) {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="mentoring-title">
+        <SectionHeading number="4" id="mentoring-title">
           {translations.title}
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">

@@ -99,7 +99,7 @@ export function Work({ translations }) {
       className="scroll-mt-14 pb-8 pt-16 sm:scroll-mt-32 sm:pb-10 sm:pt-20 lg:pb-16 lg:pt-32"
     >
       <Container>
-        <SectionHeading number="4" id="work-title">
+        <SectionHeading number="3" id="work-title">
           {translations.title}
         </SectionHeading>
         <p className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">

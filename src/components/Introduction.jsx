@@ -65,6 +65,9 @@ export function Introduction({ translations, preorderTranslations }) {
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           {translations.paragraph3}
         </p>
+        <p className="mt-4 text-lg font-semibold tracking-tight text-slate-900">
+          {translations.audiobook}
+        </p>
 
         <Facts translations={translations}></Facts>
         <div className="flex justify-center pt-8 text-center">

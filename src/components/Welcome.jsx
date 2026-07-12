@@ -5,7 +5,6 @@ import {
   ExpandableButton,
   ExpandableItems,
 } from '@/components/Expandable'
-import { SectionHeading } from '@/components/SectionHeading'
 import { ContactLinks } from '@/components/ContactLinks'
 import authorImage from '@/images/lunow-lunow-293.jpeg'
 
@@ -17,13 +16,12 @@ export function Welcome({ translations }) {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="1" id="welcome-title">
-          {translations.title}
-        </SectionHeading>
-
-        <p className="mt-8 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
+        <h2
+          id="welcome-title"
+          className="pt-12 pb-16 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl"
+        >
           {translations.greeting}
-        </p>
+        </h2>
       </Container>
 
       <div className="relative mt-8 bg-white">

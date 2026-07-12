@@ -40,7 +40,6 @@ export function NavBar({ translations }) {
   let navBarRef = useRef(null)
   let [activeIndex, setActiveIndex] = useState(null)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
-  let [stuckAtTop, setStuckAtTop] = useState(false)
 
   useEffect(() => {
     function updateActiveIndex() {
@@ -80,7 +79,6 @@ export function NavBar({ translations }) {
     function onScroll() {
       if (rafId !== null) return
       rafId = requestAnimationFrame(() => {
-        setStuckAtTop(window.scrollY > 10)
         updateActiveIndex()
         rafId = null
       })
@@ -98,13 +96,7 @@ export function NavBar({ translations }) {
   const t = useTranslations()
 
   return (
-    <div
-      ref={navBarRef}
-      className={clsx(
-        'z-50 w-full transition-all duration-300',
-        stuckAtTop ? 'sticky top-0' : 'fixed bottom-0 left-0 right-0'
-      )}
-    >
+    <div ref={navBarRef} className="sticky top-0 bottom-0 z-50 w-full">
       <Popover className="sm:hidden">
         {({ open }) => (
           <>
@@ -167,7 +159,6 @@ export function NavBar({ translations }) {
                 <LanguageSwitcher variant="pill" />
               </div>
             </PopoverPanel>
-            <div className="absolute inset-x-0 bottom-full z-10 h-4 bg-white" />
           </>
         )}
       </Popover>

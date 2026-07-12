@@ -18,22 +18,8 @@ export default function Home({ params: { locale } }) {
 
   return (
     <>
-      <Hero translations={t.hero} preorderTranslations={t.preorder} />
-      <NavBar translations={t.navbar} />
-      <Introduction translations={t.introduction} preorderTranslations={t.preorder} />
-      <Testimonial
-        id="testimonial-from-tommy-stroman"
-        author={{
-          name: t.testimonials.testimonial1.author,
-          role: t.testimonials.testimonial1.role,
-        }}
-        locale={locale}
-      >
-        <p>
-          {t.testimonials.testimonial1.text}
-        </p>
-      </Testimonial>
       <Welcome translations={t.welcome} />
+      <NavBar translations={t.navbar} />
       <Podcasts translations={t.podcasts} />
       <Testimonial
         id="testimonial-from-gerardo-stark"
@@ -47,9 +33,23 @@ export default function Home({ params: { locale } }) {
           {t.testimonials.testimonial2.text}
         </p>
       </Testimonial>
+      <Work translations={t.work} locale={locale} />
       <Mentoring translations={t.mentoring} />
       <FreeChapters translations={t.freeChapters} />
-      <Work translations={t.work} locale={locale} />
+      <Hero translations={t.hero} preorderTranslations={t.preorder} />
+      <Introduction translations={t.introduction} preorderTranslations={t.preorder} />
+      <Testimonial
+        id="testimonial-from-tommy-stroman"
+        author={{
+          name: t.testimonials.testimonial1.author,
+          role: t.testimonials.testimonial1.role,
+        }}
+        locale={locale}
+      >
+        <p>
+          {t.testimonials.testimonial1.text}
+        </p>
+      </Testimonial>
       <Testimonials translations={t.testimonials} locale={locale} />
       <Contact translations={t.contact} />
       <Footer />

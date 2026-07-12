@@ -83,7 +83,7 @@ const schemaData = [
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Lauscher Lounge',
+      name: 'Lauscherlounge',
       url: 'https://www.lauscherlounge.de/',
     },
     datePublished: '2026-01-30',
@@ -94,7 +94,10 @@ const schemaData = [
     description:
       'Das Hörbuch zu Riaru, dem Debütroman von Paul K. Lunow. Gesprochen von Rebecca Veil, produziert von Daniel Lewy.',
     url: 'https://www.lauscherlounge.de/produktionen/riaru',
-    sameAs: 'https://www.lauscherlounge.de/produktionen/riaru',
+    sameAs: [
+      'https://www.lauscherlounge.de/produktionen/riaru',
+      'https://www.amazon.com/Audible-Riaru/dp/B0GGDZ9DL4',
+    ],
     workExample: { '@id': 'https://www.paul-lunow.de/#book-riaru' },
   },
   {
@@ -104,7 +107,8 @@ const schemaData = [
     name: 'Product & Cake',
     description:
       'Podcast about tech products and leadership by Paul K. Lunow.',
-    webFeed: 'https://podcast-feed.paul-lunow.de/',
+    url: 'https://www.product-and-cake.com',
+    webFeed: 'https://feed.product-and-cake.com/rss.xml',
     author: { '@id': 'https://www.paul-lunow.de/#person' },
     sameAs: [
       'https://podcasts.apple.com/gb/podcast/product-and-cake/id1651982219',

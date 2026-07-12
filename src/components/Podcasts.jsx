@@ -112,11 +112,14 @@ function LoadingIcon(props) {
 const parser = new Parser()
 
 const fetchLatestEpisodes = async () => {
+  // feed.product-and-cake.com sends no CORS headers, so the browser fetch
+  // must go through this CORS-enabled proxy of the same feed
   const feed = await parser.parseURL('https://podcast-feed.paul-lunow.de/')
 
   return feed.items
-    .slice(-4)
-    .reverse()
+    .slice()
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+    .slice(0, 4)
     .map((item) => ({
       title: item.title,
       description: item.contentSnippet,
@@ -263,7 +266,7 @@ export function Podcasts({ translations }) {
               >
                 <div className="flex overflow-hidden rounded shadow-sm">
                   <Image
-                    src={podcastCover}
+                    src={video.image ?? podcastCover}
                     width="200"
                     height="200"
                     alt=""
@@ -309,8 +312,7 @@ export function Podcasts({ translations }) {
         </p>
         <div className="mt-4 flex justify-center space-x-4">
           <Button
-            as="a"
-            href="https://podcastle.ai/show/product-and-cake-9408"
+            href="https://www.product-and-cake.com"
             target="_blank"
             variant="solid"
             color="blue"
@@ -319,7 +321,6 @@ export function Podcasts({ translations }) {
           </Button>
 
           <Button
-            as="a"
             href="https://podcasts.apple.com/gb/podcast/product-and-cake/id1651982219"
             target="_blank"
             variant="outline"
@@ -328,7 +329,6 @@ export function Podcasts({ translations }) {
           </Button>
 
           <Button
-            as="a"
             href="https://open.spotify.com/show/6GWmx7OdEn04inrQjp3Bif"
             target="_blank"
             variant="outline"
