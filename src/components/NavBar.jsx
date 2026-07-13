@@ -39,6 +39,7 @@ export function NavBar({ translations }) {
   
   let navBarRef = useRef(null)
   let [activeIndex, setActiveIndex] = useState(null)
+  let [stuckToBottom, setStuckToBottom] = useState(true)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
 
   useEffect(() => {
@@ -46,6 +47,8 @@ export function NavBar({ translations }) {
       if (!navBarRef.current) {
         return
       }
+
+      setStuckToBottom(navBarRef.current.getBoundingClientRect().top > 1)
 
       let newActiveIndex = null
       let elements = sections
@@ -107,19 +110,24 @@ export function NavBar({ translations }) {
                   'bg-white/95 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur',
               )}
             >
-              {!open && (
-                <>
-                  <span
-                    aria-hidden="true"
-                    className="font-mono text-sm text-teal-600"
-                  >
-                    {(mobileActiveIndex + 1).toString().padStart(2, '0')}
+              {!open &&
+                (stuckToBottom ? (
+                  <span className="text-base font-medium text-slate-900">
+                    {translations.menuLabel ?? 'Menu'}
                   </span>
-                  <span className="ml-4 text-base font-medium text-slate-900">
-                    {sections[mobileActiveIndex].title}
-                  </span>
-                </>
-              )}
+                ) : (
+                  <>
+                    <span
+                      aria-hidden="true"
+                      className="font-mono text-sm text-teal-600"
+                    >
+                      {(mobileActiveIndex + 1).toString().padStart(2, '0')}
+                    </span>
+                    <span className="ml-4 text-base font-medium text-slate-900">
+                      {sections[mobileActiveIndex].title}
+                    </span>
+                  </>
+                ))}
               <PopoverButton
                 className={clsx(
                   '-mr-1 ml-auto flex h-8 w-8 items-center justify-center',
@@ -136,7 +144,12 @@ export function NavBar({ translations }) {
                 <MenuIcon open={open} className="h-6 w-6 stroke-slate-700" />
               </PopoverButton>
             </div>
-            <PopoverPanel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
+            <PopoverPanel
+              className={clsx(
+                'absolute inset-x-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur',
+                stuckToBottom ? 'bottom-0' : 'top-0',
+              )}
+            >
               {sections.map((section, sectionIndex) => (
                 <PopoverButton
                   as="a"

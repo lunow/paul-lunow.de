@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Paul K. Lunow – Author, CTO & Mentor | Debut Novel Riaru",
-    "description": "Paul K. Lunow: Author of cyber novel Riaru, CTO at Vention, podcast host & mentor. Tech leadership, consulting, and a gripping novel about the digital world."
+    "description": "Paul K. Lunow: Author of cyber novel Riaru, CTO at Vention, Certified Claude Architect, podcast host & mentor. Tech leadership, consulting, and a gripping novel about the digital world."
   },
   "hero": {
     "testimonial": "This book is exciting and easy to understand. I love it!",
@@ -16,7 +16,7 @@
     "story1": "As a child, I dreamed of becoming a writer.",
     "story1Text": "This desire inspired me to program a literature portal – a place where my friends and I could share our ideas and thoughts during school time. This dream became a journey: 20 years in the tech industry, in which I worked in almost every conceivable role around technology. Now my childhood dream has come true: In January 2025, my first novel, Riaru, was published.",
     "story2": "Today I live at the intersection of technology, leadership and creativity.",
-    "story2Text": "As CTO at Vention, I help companies implement successful technology projects. In my podcast, I share my knowledge about tech products and leadership. I also accompany teams and companies as a mentor and consultant to find orientation in the digital world.",
+    "story2Text": "As CTO at Vention and Certified Claude Architect, I help companies implement successful technology and AI projects. In my podcast, I share my knowledge about tech products and leadership. I also accompany teams and companies as a mentor and consultant to find orientation in the digital world.",
     "story3": "This website reflects all facets of my work and passion. Whether you want to order my book, are looking for inspiring podcast episodes, or are looking for a sparring partner for your digital challenges – I look forward to your message and your feedback.",
     "cta": "Let's get in touch!",
     "ctaText": "Follow me on LinkedIn or Instagram, or write me a message – I look forward to hearing from you."
@@ -47,7 +47,8 @@
         "Signed copy of my book*"
       ]
     },
-    "disclaimer": "(*OK, I still need to discuss this)"
+    "disclaimer": "(*OK, I still need to discuss this)",
+    "mobileCta": "Accelerate your roadmap"
   },
   "contact": {
     "title": "Contact",
@@ -88,6 +89,7 @@
     "audiobook": "Riaru is now also available as an audiobook: produced by Lauscherlounge and read by Rebecca Veil – available on Audible.",
     "stats": {
       "pages": "Pages",
+      "audiobookLength": "Audiobook Length",
       "language": "Language",
       "publisher": "Publisher",
       "releaseDate": "Release Date"
@@ -105,6 +107,7 @@
     "linkedinButton": "Connect on LinkedIn"
   },
   "navbar": {
+    "menuLabel": "Menu",
     "sections": [
       {
         "id": "podcasts",

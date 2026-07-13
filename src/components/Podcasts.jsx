@@ -249,7 +249,7 @@ export function Podcasts({ translations }) {
       <Container size="lg" className="mt-16">
         <ol
           role="list"
-          className="grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4"
+          className="grid grid-cols-1 gap-x-8 gap-y-16 [counter-reset:video] sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4"
         >
           {(episodes.length > 0 ? episodes : videos).map((video, index) => (
             <li

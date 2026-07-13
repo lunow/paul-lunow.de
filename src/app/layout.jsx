@@ -15,7 +15,7 @@ export const metadata = {
   metadataBase: new URL('https://www.paul-lunow.de'),
   title: 'Paul K. Lunow – Autor, CTO & Mentor | Debütroman Riaru',
   description:
-    'Paul K. Lunow: Autor des Cyber-Romans Riaru, CTO bei Vention, Podcast-Host und Mentor. Tech-Leadership, Beratung und ein packender Roman über die digitale Welt.',
+    'Paul K. Lunow: Autor des Cyber-Romans Riaru, CTO bei Vention, zertifizierter Claude Architect, Podcast-Host und Mentor. Tech-Leadership, Beratung und ein packender Roman über die digitale Welt.',
 }
 
 const schemaData = [
@@ -33,7 +33,17 @@ const schemaData = [
       url: 'https://ventionteams.com/',
     },
     description:
-      'Paul K. Lunow is a CTO, author, podcast host and mentor with 20 years in the tech industry. Author of the debut novel Riaru (2025) and the audiobook Riaru (2026).',
+      'Paul K. Lunow is a CTO, author, podcast host, mentor and Certified Claude Architect with 20 years in the tech industry. Author of the debut novel Riaru (2025) and the audiobook Riaru (2026).',
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Certified Claude Architect',
+      credentialCategory: 'certification',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Anthropic',
+        url: 'https://www.anthropic.com',
+      },
+    },
     sameAs: [
       'https://www.linkedin.com/in/paul-lunow',
       'https://www.instagram.com/paullunow/',
@@ -160,7 +170,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:description"
-          content="Debütroman Riaru, Hörbuch, Podcast, CTO bei Vention, Mentoring & Beratung."
+          content="Debütroman Riaru, Hörbuch, Podcast, CTO bei Vention, zertifizierter Claude Architect, Mentoring & Beratung."
         />
         <script
           type="application/ld+json"

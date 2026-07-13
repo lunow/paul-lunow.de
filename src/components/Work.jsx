@@ -108,6 +108,16 @@ export function Work({ translations }) {
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
           {translations.description}
         </p>
+        <div className="mt-8 md:hidden">
+          <Button
+            href="https://ventionteams.com"
+            target="_blank"
+            variant="solid"
+            color="blue"
+          >
+            {translations.mobileCta}
+          </Button>
+        </div>
       </Container>
       <div className="mx-auto mt-16 hidden max-w-5xl md:block lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">

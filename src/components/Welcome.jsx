@@ -18,7 +18,7 @@ export function Welcome({ translations }) {
       <Container>
         <h2
           id="welcome-title"
-          className="pt-12 pb-16 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl"
+          className="pt-12 pb-20 sm:pb-24 lg:pb-36 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl"
         >
           {translations.greeting}
         </h2>

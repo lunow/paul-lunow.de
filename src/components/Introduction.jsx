@@ -7,18 +7,19 @@ import { Preorder } from '@/components/Preorder'
 export default function Facts({ translations }) {
   const stats = [
     { id: 1, name: translations.stats.pages, value: '244' },
-    { id: 2, name: translations.stats.language, value: translations.stats.language === 'Language' ? 'German' : 'deutsch' },
+    { id: 2, name: translations.stats.audiobookLength, value: '8h 19min' },
+    { id: 3, name: translations.stats.language, value: translations.stats.language === 'Language' ? 'German' : 'deutsch' },
     {
-      id: 3,
+      id: 4,
       name: translations.stats.publisher,
       value: 'Periplaneta',
       link: 'https://www.periplaneta.com/',
     },
-    { id: 4, name: translations.stats.releaseDate, value: '15.01.2025' },
+    { id: 5, name: translations.stats.releaseDate, value: '15.01.2025' },
   ]
   return (
     <div className="bg-white pt-1">
-      <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+      <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
         {stats.map((stat) => (
           <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
             <dt className="text-sm/6 font-semibold text-gray-600">
