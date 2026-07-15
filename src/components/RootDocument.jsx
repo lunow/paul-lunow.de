@@ -11,13 +11,6 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-export const metadata = {
-  metadataBase: new URL('https://www.paul-lunow.de'),
-  title: 'Paul K. Lunow – Autor, CTO & Mentor | Debütroman Riaru',
-  description:
-    'Paul K. Lunow: Autor des Cyber-Romans Riaru, CTO bei Vention, zertifizierter Claude Architect, Podcast-Host und Mentor. Tech-Leadership, Beratung und ein packender Roman über die digitale Welt.',
-}
-
 const schemaData = [
   {
     '@context': 'https://schema.org',
@@ -58,7 +51,7 @@ const schemaData = [
     name: 'Paul K. Lunow',
     description:
       'Personal website of Paul K. Lunow – CTO, author of Riaru, podcast host and tech consultant.',
-    inLanguage: ['de', 'en'],
+    inLanguage: ['en', 'de'],
     author: { '@id': 'https://www.paul-lunow.de/#person' },
   },
   {
@@ -127,10 +120,10 @@ const schemaData = [
   },
 ]
 
-export default function RootLayout({ children }) {
+export function RootDocument({ lang, children }) {
   return (
     <html
-      lang="de"
+      lang={lang}
       className={clsx(
         'h-full scroll-smooth bg-white antialiased',
         inter.variable,
@@ -152,25 +145,17 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
-        <meta
-          property="og:image"
-          content="https://www.paul-lunow.de/og-image.jpg"
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href="/llms.txt"
+          title="llms.txt – LLM-friendly summary"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image:alt"
-          content="Riaru – Debütroman von Paul K. Lunow"
-        />
-        <meta property="og:url" content="https://www.paul-lunow.de" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Paul K. Lunow – Autor, CTO & Mentor"
-        />
-        <meta
-          property="og:description"
-          content="Debütroman Riaru, Hörbuch, Podcast, CTO bei Vention, zertifizierter Claude Architect, Mentoring & Beratung."
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href="/llms-full.txt"
+          title="llms-full.txt – complete content in Markdown"
         />
         <script
           type="application/ld+json"

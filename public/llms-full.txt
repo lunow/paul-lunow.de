@@ -1,0 +1,136 @@
+# Paul K. Lunow - Personal Website (Full Content)
+
+> Complete content of https://www.paul-lunow.de/ in Markdown, English version.
+> Paul K. Lunow: CTO at Vention, author of the cyber novel Riaru, Certified Claude Architect, podcast host and mentor.
+
+## Welcome
+
+Hi, I'm Paul. And you've landed on my personal website.
+
+**As a child, I dreamed of becoming a writer.** This desire inspired me to program a literature portal - a place where my friends and I could share our ideas and thoughts during school time. This dream became a journey: 20 years in the tech industry, in which I worked in almost every conceivable role around technology. Now my childhood dream has come true: In January 2025, my first novel, Riaru, was published.
+
+**Today I live at the intersection of technology, leadership and creativity.** As CTO at Vention and Certified Claude Architect, I help companies implement successful technology and AI projects. In my podcast, I share my knowledge about tech products and leadership. I also accompany teams and companies as a mentor and consultant to find orientation in the digital world.
+
+This website reflects all facets of my work and passion. Whether you want to order my book, are looking for inspiring podcast episodes, or are looking for a sparring partner for your digital challenges - I look forward to your message and your feedback.
+
+Let's get in touch! Follow me on LinkedIn or Instagram, or write me a message - I look forward to hearing from you.
+
+## Podcast - Product & Cake
+
+Product&Cake Podcast is the perfect companion in the wild Product-Tech world.
+
+Ghonche and I met at mobile.de in the podcast studio. No one needed the studio at the time and we had cake with us, so we recorded a podcast for fun. The feedback in the internal chat was overwhelming. Just like the fun we had during the recording. So we kept going!
+
+- Website: https://www.product-and-cake.com
+- Apple Podcasts: https://podcasts.apple.com/gb/podcast/product-and-cake/id1651982219
+- Spotify: https://open.spotify.com/show/6GWmx7OdEn04inrQjp3Bif
+- RSS feed: https://feed.product-and-cake.com/rss.xml
+
+## Work - CTO at Vention
+
+Engineering AI peace of mind.
+
+At Vention, I get to support companies as CTO in implementing successful technology projects. With the expertise of over 3000 developers, we can lead any project to success.
+
+- Vention: https://ventionteams.com/ - Engineering Peace of Mind, over 3000 developers, 100% focus on tech.
+- Talk to sales: https://ventionteams.com/company/contacts - only 2 weeks until kick-off, technology match and cultural fit, 30 days ramp down if necessary, CTO leadership support.
+
+## Consulting and Mentoring
+
+Bring me into your team! I help find ways in the vast sea of possibilities.
+
+As a founder of several companies, team leader and strategy consultant, I have gained comprehensive experience in recent years: from building and leading motivated teams to successfully pitching ideas to implementing scalable solutions. Today I pass on this knowledge - to people, teams and companies that are looking for orientation, want to overcome challenges or achieve their goals faster.
+
+What I bring:
+
+- **Experience** - Well-founded insights into founding, growth and leadership - combined with practical solutions.
+- **Clarity** - I help you make quick decisions and recognize wrong paths early.
+- **Perspective** - Fresh impulses that help you see complex challenges from a new perspective.
+
+What I do:
+
+- **Start-ups** - As a sparring partner, coach and listener, I get to accompany some founders in the most exciting phase of their lives.
+- **Mentoring** - As a mentor at Tech4Germany, I support young talents in making our government more digital!
+- **Advisory Board** - An outside perspective is important for every company. As a member of the advisory board, I contribute my experience.
+
+It always excites me to support people and companies in getting the best out of themselves - motivated, efficient and with a clear focus on the future. Following my motto: "The answer to how is yes!"
+
+## Book - Riaru
+
+Your look behind the scenes. Riaru is the debut novel by Paul K. Lunow and provides insight into the world of tech companies.
+
+### Welcome to the most modern company in the world
+
+Riaru is the most globally successful company: an online multiplayer game that allows its users to dive into foreign worlds, realize themselves and even profitably market their own business. Making the world a better place for everyone is Riaru's declared goal.
+
+Mic desperately wants to contribute to this idealistic idea. But even an excellent degree in software development is meaningless when acquired in a small Argentine town. The career leap to Europe seems hopeless. But then Tuuli, the founder of Riaru, notices Mic. The job at the Berlin headquarters is like a dream. Until Mic wakes up.
+
+Paul K. Lunow, himself a founder and programmer, provides deep insights into the structure of tech corporations and the handling of metadata in this exciting cyber novel. With his extensive background knowledge, he makes us understand what complex digital processes happen in the systems behind our monitors.
+
+### Facts
+
+- Pages: 244
+- Language: German
+- Publisher: Periplaneta (https://www.periplaneta.com/)
+- Release date: January 15, 2025
+- Buy on Amazon: https://amzn.eu/d/3YV37dm (or at your local bookstore)
+
+### Audiobook
+
+Riaru is now also available as an audiobook: produced by Lauscherlounge and read by Rebecca Veil - available on Audible.
+
+- Producer: Lauscher Lounge (https://www.lauscherlounge.de/produktionen/riaru)
+- Narrator: Rebecca Veil
+- Release date: January 30, 2026
+- Duration: 8h 19m
+- ISBN: 978-3-911421-17-1
+- Audible: https://www.amazon.com/Audible-Riaru/dp/B0GGDZ9DL4
+
+## Testimonials
+
+Nice words from my environment... I am so happy about the many wonderful people from all over the world that I was able to work with and still do. Here are some quotes, slightly shortened and anonymized. I thank you all!
+
+- "This book is exciting and easy to understand. I love it!" - Olga, less technically versed reader, artist
+- "Typical Paul: Fast, precise, funny and always with valuable insights." - Tim, technically versed reader, Creative Director
+- "I am listening now your Product & Cake podcast and you really practice what you preach, Paul. I find that very honest." - Gabriel, Full Stack Engineer
+- "Paul is top-notch professionally, but even more remarkable is his unpretentious, de-escalating, and always solution-oriented manner." - Justus, Chief Content Officer
+- "Your inputs in the peer leader group are ALWAYS valuable, the discussions are always great!" - Tamari, Head of Learning Strategy
+- "I can rely on your decisions, leadership and you are clear & transparent in your communication." - Moutaz, Senior Full Stack Engineer
+- "Thank you again for your impulse. It was really very well done - we were able to take a lot from it." - Antonio, Board Member
+- "Stay so honest in the presentations about what doesn't work either - that went down very well!" - Julius, Board Spokesperson
+- "Man I swear I like you so much and thank you for getting back to me, this means a lot for me." - Mohammad, Senior Full Stack Engineer
+- "We still talk about you often and are very grateful for everything you built for us. Without you we would never have come this far. Come visit us again soon!" - Ulla, Corporate Communications
+- "Every team can be super happy to have you and your nice, curious energy on board." - Katharina, HR Manager
+- "I keep noticing how much I enjoy working with you. Pragmatic, fast, on equal footing." - Luisa, Head of Marketing
+- "I find your ideas very exciting, a bit unconventional and very inspiring and future-oriented." - Eva, Head of Agile Transformation
+- "With what calm and ease you ask the questions. And really good questions - that's an art." - Miriam, Founder
+- "Building a new team consisting of externals and internals from multiple teams is rather challenging. He managed to bring all of us together around the same goal, which I find very impressive in such a short time." - Ghonche, Lead Product Manager
+- "It's great to have someone like you with entrepreneurial spirit and real drive for our customers AND our environment AND our teams on board!" - Patricia, CEO
+- "Your proactive approach, networking efforts, and involvement in business development are genuinely valued and have already made a visible impact." - Kate, Sales Director
+- "I can't say how much I appreciate your time today, it really was an experience that I won't forget easily. You should be really proud of the environment you are making - it's really great stuff!" - Ben, Podcast Guest
+
+## Contact
+
+Paul K. Lunow - CTO at Vention GmbH.
+
+I look forward to hearing from you! If you have questions or are looking for exchange, you can reach me by email or through my social channels. Here are some good reasons why you might want to write to me:
+
+- You have a new start-up or project idea and are looking for a sparring partner for implementation.
+- Your team needs support to efficiently advance projects.
+- You want a signed copy of my book or want to conduct an interview with me.
+- You are looking for a speaker or workshop leader for your event.
+- You have feedback on my work, my website or just want to get in touch.
+
+- Email: hallo26@paul.lun.io
+- LinkedIn: https://www.linkedin.com/in/paul-lunow
+- Instagram: https://www.instagram.com/paullunow/
+
+## Imprint
+
+No personal data is stored on this page - that's why you didn't have to click away any annoying cookie banner. This page serves solely to present me and my work. According to the Telemedia Act, Paul K. Lunow is responsible for the content of this website.
+
+## Website
+
+- English (default): https://www.paul-lunow.de/
+- German: https://www.paul-lunow.de/de/
+- LLM summary: https://www.paul-lunow.de/llms.txt

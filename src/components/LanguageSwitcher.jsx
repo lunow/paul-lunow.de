@@ -10,7 +10,7 @@ export function LanguageSwitcher({ variant = 'pill', className }) {
   const nextLocale = locale === 'de' ? 'en' : 'de'
   const label = nextLocale === 'en' ? 'English' : 'Deutsch'
   const flag = nextLocale === 'en' ? '🇬🇧' : '🇩🇪'
-  const href = `/${nextLocale}/`
+  const href = nextLocale === 'de' ? '/de/' : '/'
 
   if (variant === 'pill') {
     return (

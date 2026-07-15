@@ -10,14 +10,14 @@ import { Podcasts } from '@/components/Podcasts'
 import { Welcome } from '@/components/Welcome'
 import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
-import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { LocaleProvider } from '@/components/LocaleProvider'
 import { getTranslations } from '@/lib/translations'
 
-export default function Home({ params: { locale } }) {
+export function HomePage({ locale }) {
   const t = getTranslations(locale)
 
   return (
-    <>
+    <LocaleProvider locale={locale}>
       <Welcome translations={t.welcome} />
       <NavBar translations={t.navbar} />
       <Podcasts translations={t.podcasts} />
@@ -53,12 +53,6 @@ export default function Home({ params: { locale } }) {
       <Testimonials translations={t.testimonials} locale={locale} />
       <Contact translations={t.contact} />
       <Footer />
-    </>
+    </LocaleProvider>
   )
 }
-
-export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'de' }]
-}
-
-

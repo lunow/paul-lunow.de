@@ -1,0 +1,14 @@
+# Serve text files (llms.txt, llms-full.txt, robots.txt) as UTF-8
+AddCharset UTF-8 .txt
+
+# Canonical host: paul-lunow.de -> www.paul-lunow.de
+# (HTTP -> HTTPS is already enforced by the hosting provider)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^paul-lunow\.de$ [NC]
+RewriteRule ^ https://www.paul-lunow.de%{REQUEST_URI} [R=301,L]
+
+# English content moved from /en/ to the site root
+RewriteRule ^en(/.*)?$ https://www.paul-lunow.de/ [R=301,L]
+
+# Branded 404 page (served with 404 status)
+ErrorDocument 404 /error-404/index.html
