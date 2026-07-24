@@ -35,6 +35,7 @@ export function HomePage({ locale }) {
       </Testimonial>
       <Work translations={t.work} locale={locale} />
       <Mentoring translations={t.mentoring} />
+      <Testimonials translations={t.testimonials} locale={locale} />
       <FreeChapters translations={t.freeChapters} />
       <Hero translations={t.hero} preorderTranslations={t.preorder} />
       <Introduction translations={t.introduction} preorderTranslations={t.preorder} />
@@ -50,7 +51,6 @@ export function HomePage({ locale }) {
           {t.testimonials.testimonial1.text}
         </p>
       </Testimonial>
-      <Testimonials translations={t.testimonials} locale={locale} />
       <Contact translations={t.contact} />
       <Footer />
     </LocaleProvider>
