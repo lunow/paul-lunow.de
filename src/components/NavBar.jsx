@@ -1,61 +1,58 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { LanguageSwitcher } from './LanguageSwitcher'
-import { useTranslations } from '@/components/LocaleProvider'
 import clsx from 'clsx'
 
-// This will be replaced by translations
-
-function MenuIcon({ open, ...props }) {
+function MenuIcon(props) {
   return (
     <svg
       aria-hidden="true"
       fill="none"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       viewBox="0 0 24 24"
       {...props}
     >
-      <path
-        d={open ? 'M17 7 7 17M7 7l10 10' : 'm15 16-3 3-3-3M15 8l-3-3-3 3'}
-      />
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </svg>
+  )
+}
+
+function CloseIcon(props) {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="none"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path d="m6 6 12 12M18 6 6 18" />
     </svg>
   )
 }
 
 export function NavBar({ translations }) {
-  const sections = translations.sections.map(section => ({
+  const sections = translations.sections.map((section) => ({
     id: section.id,
-    title: (
-      <>
-        <span className="hidden lg:inline">{section.title}</span>
-        <span className="lg:hidden">{section.titleShort}</span>
-      </>
-    ),
+    title: section.title,
   }))
-  
-  let navBarRef = useRef(null)
+
   let [activeIndex, setActiveIndex] = useState(null)
-  let [stuckToBottom, setStuckToBottom] = useState(true)
-  let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
 
   useEffect(() => {
     function updateActiveIndex() {
-      if (!navBarRef.current) {
-        return
-      }
-
-      setStuckToBottom(navBarRef.current.getBoundingClientRect().top > 1)
-
       let newActiveIndex = null
       let elements = sections
         .map(({ id }) => document.getElementById(id))
         .filter((el) => el !== null)
       let bodyRect = document.body.getBoundingClientRect()
-      let offset = bodyRect.top + navBarRef.current.offsetHeight + 1
+      let offset = bodyRect.top + 96
 
       if (window.scrollY >= Math.floor(bodyRect.height) - window.innerHeight) {
         setActiveIndex(sections.length - 1)
@@ -96,111 +93,58 @@ export function NavBar({ translations }) {
     }
   }, [])
 
-  const t = useTranslations()
-
   return (
-    <div ref={navBarRef} className="sticky top-0 bottom-0 z-50 w-full">
-      <Popover className="sm:hidden">
+    <div className="fixed right-4 top-4 z-50 sm:right-6 sm:top-6">
+      <Popover className="relative">
         {({ open }) => (
           <>
-            <div
+            <PopoverButton
               className={clsx(
-                'relative flex items-center px-4 py-3',
-                !open &&
-                  'bg-white/95 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur',
+                'flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-sm ring-1 ring-slate-900/10 backdrop-blur transition hover:bg-white hover:ring-teal-600/20',
+                'focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500/60',
               )}
+              aria-label="Toggle navigation menu"
             >
-              {!open &&
-                (stuckToBottom ? (
-                  <span className="text-base font-medium text-slate-900">
-                    {translations.menuLabel ?? 'Menu'}
-                  </span>
-                ) : (
-                  <>
-                    <span
-                      aria-hidden="true"
-                      className="font-mono text-sm text-teal-600"
-                    >
-                      {(mobileActiveIndex + 1).toString().padStart(2, '0')}
-                    </span>
-                    <span className="ml-4 text-base font-medium text-slate-900">
-                      {sections[mobileActiveIndex].title}
-                    </span>
-                  </>
-                ))}
-              <PopoverButton
-                className={clsx(
-                  '-mr-1 ml-auto flex h-8 w-8 items-center justify-center',
-                  open && 'relative z-10',
-                )}
-                aria-label="Toggle navigation menu"
-              >
-                {!open && (
-                  <>
-                    {/* Increase hit area */}
-                    <span className="absolute inset-0" />
-                  </>
-                )}
-                <MenuIcon open={open} className="h-6 w-6 stroke-slate-700" />
-              </PopoverButton>
-            </div>
+              {open ? (
+                <CloseIcon className="h-4 w-4 stroke-slate-700" />
+              ) : (
+                <MenuIcon className="h-4 w-4 stroke-slate-700" />
+              )}
+            </PopoverButton>
             <PopoverPanel
-              className={clsx(
-                'absolute inset-x-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur',
-                stuckToBottom ? 'bottom-0' : 'top-0',
-              )}
+              transition
+              anchor={{ to: 'bottom end', gap: '0.5rem' }}
+              className="w-52 rounded-2xl bg-white/95 p-1.5 text-sm shadow-lg ring-1 ring-slate-900/10 backdrop-blur transition duration-150 ease-out data-[closed]:translate-y-1 data-[closed]:opacity-0"
             >
-              {sections.map((section, sectionIndex) => (
-                <PopoverButton
-                  as="a"
-                  key={section.id}
-                  href={`#${section.id}`}
-                  className="flex items-center px-4 py-1.5"
-                >
-                  <span
-                    aria-hidden="true"
-                    className="font-mono text-sm text-teal-600"
-                  >
-                    {(sectionIndex + 1).toString().padStart(2, '0')}
-                  </span>
-                  <span className="ml-4 text-base font-medium text-slate-900">
-                    {section.title}
-                  </span>
-                </PopoverButton>
-              ))}
-              <div className="mt-2 border-t border-slate-200 pt-2 px-4">
+              <ol role="list" className="[counter-reset:section]">
+                {sections.map((section, sectionIndex) => (
+                  <li key={section.id} className="[counter-increment:section]">
+                    <PopoverButton
+                      as="a"
+                      href={`#${section.id}`}
+                      className={clsx(
+                        'flex items-center rounded-xl px-3 py-2 font-light tracking-tight transition',
+                        sectionIndex === activeIndex
+                          ? 'bg-teal-50 text-teal-700'
+                          : 'text-slate-700 hover:bg-slate-50',
+                      )}
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="w-5 font-mono text-xs text-slate-400 before:content-[counter(section,decimal-leading-zero)]"
+                      />
+                      <span className="ml-2">{section.title}</span>
+                    </PopoverButton>
+                  </li>
+                ))}
+              </ol>
+              <div className="mt-1.5 flex justify-center border-t border-slate-900/5 pt-1.5">
                 <LanguageSwitcher variant="pill" />
               </div>
             </PopoverPanel>
           </>
         )}
       </Popover>
-      <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-slate-200 sm:bg-white/95 sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur">
-        <ol
-          role="list"
-          className="mb-[-2px] grid auto-cols-[minmax(0,15rem)] grid-flow-col text-base font-medium text-slate-900 [counter-reset:section]"
-        >
-          {sections.map((section, sectionIndex) => (
-            <li key={section.id} className="flex [counter-increment:section]">
-              <a
-                href={`#${section.id}`}
-                className={clsx(
-                  'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
-                  sectionIndex === activeIndex
-                    ? 'border-teal-600 bg-teal-50 text-teal-600 before:text-teal-600'
-                    : 'border-transparent before:text-slate-500 hover:bg-teal-50/40 hover:before:text-slate-900',
-                )}
-              >
-                {section.title}
-              </a>
-            </li>
-          ))}
-        </ol>
-        <div className="absolute right-4 top-1/2 -translate-y-1/2">
-          <LanguageSwitcher variant="pill" />
-        </div>
-      </div>
-      {/* Mobile floating removed; language switcher appears in popover below */}
     </div>
   )
 }

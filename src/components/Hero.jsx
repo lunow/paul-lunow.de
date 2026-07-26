@@ -32,7 +32,7 @@ export function Hero({ translations, preorderTranslations }) {
   return (
     <header
       id="writing"
-      className="scroll-mt-14 overflow-hidden py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-6 overflow-hidden py-16 sm:py-20 lg:py-32"
     >
       <Container size="lg">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
