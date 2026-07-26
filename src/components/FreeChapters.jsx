@@ -16,10 +16,10 @@ export function FreeChapters({ translations }) {
         >
           <Pattern className="absolute -top-32 left-0 w-full sm:-top-5 sm:left-3/4 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:left-2/3 xl:right-auto" />
           <div>
-            <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
+            <h2 className="font-display text-5xl font-light tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
               {translations.title}
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-teal-100">
+            <p className="mt-4 text-lg font-light tracking-tight text-teal-100">
               {translations.description}
             </p>
           </div>

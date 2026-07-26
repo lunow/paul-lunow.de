@@ -36,17 +36,17 @@ export function Testimonial({ id, author, children, locale = 'en' }) {
     <aside
       id={id}
       aria-label={`Testimonial from ${author.name}`}
-      className="relative bg-slate-100 py-16 sm:py-32"
+      className="relative bg-stone-100/70 py-16 sm:py-32"
     >
       <div className="text-slate-900/10">
         <GridPattern x="50%" patternTransform="translate(0 80)" />
       </div>
       <Container size="xs" className="relative">
         <figure>
-          <div className="flex text-slate-900 sm:justify-center">
+          <div className="flex text-teal-700 sm:justify-center">
             <StarRating />
           </div>
-          <blockquote className={clsx('mt-10 font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-center')}>
+          <blockquote className={clsx('mt-10 font-display text-4xl font-light tracking-tight text-slate-900 sm:text-center')}>
             {children}
           </blockquote>
           <figcaption className="mt-10 flex items-center sm:justify-center">

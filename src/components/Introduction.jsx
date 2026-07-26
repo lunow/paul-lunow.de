@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { CheckIcon } from '@/components/CheckIcon'
+import { BentoCard } from '@/components/BentoCard'
 import { Container } from '@/components/Container'
 import { Preorder } from '@/components/Preorder'
 
@@ -17,32 +17,32 @@ export default function Facts({ translations }) {
     },
     { id: 5, name: translations.stats.releaseDate, value: '15.01.2025' },
   ]
+  const tints = ['sage', 'stone', 'white', 'clay', 'stone']
   return (
-    <div className="bg-white pt-1">
-      <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
-        {stats.map((stat) => (
-          <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-            <dt className="text-sm/6 font-semibold text-gray-600">
-              {stat.name}
-            </dt>
-            <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-              {stat.link ? (
-                <Link
-                  href={stat.link}
-                  target="_blank"
-                  className="hover:text-teal-800"
-                >
-                  {' '}
-                  {stat.value}{' '}
-                </Link>
-              ) : (
-                stat.value
-              )}
-            </dd>
-          </div>
-        ))}
-      </dl>
-    </div>
+    <dl className="mt-16 grid grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-5">
+      {stats.map((stat, index) => (
+        <BentoCard
+          key={stat.id}
+          tint={tints[index % tints.length]}
+          className="flex flex-col p-6"
+        >
+          <dt className="text-sm font-light text-slate-600">{stat.name}</dt>
+          <dd className="order-first font-display text-xl font-light tracking-tight text-slate-900 sm:text-2xl">
+            {stat.link ? (
+              <Link
+                href={stat.link}
+                target="_blank"
+                className="hover:text-teal-700"
+              >
+                {stat.value}
+              </Link>
+            ) : (
+              stat.value
+            )}
+          </dd>
+        </BentoCard>
+      ))}
+    </dl>
   )
 }
 
@@ -54,19 +54,19 @@ export function Introduction({ translations, preorderTranslations }) {
       className="pb-16 pt-20 sm:pb-20 md:pt-36 lg:py-32"
     >
       <Container className="text-lg tracking-tight text-slate-700">
-        <h2 className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+        <h2 className="mt-8 font-display text-4xl font-light tracking-tight text-slate-900 md:text-5xl">
           {translations.title}
         </h2>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 text-lg font-light tracking-tight text-slate-700">
           {translations.paragraph1}
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 text-lg font-light tracking-tight text-slate-700">
           {translations.paragraph2}
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 text-lg font-light tracking-tight text-slate-700">
           {translations.paragraph3}
         </p>
-        <p className="mt-4 text-lg font-semibold tracking-tight text-slate-900">
+        <p className="mt-4 text-lg font-medium tracking-tight text-slate-900">
           {translations.audiobook}
         </p>
 

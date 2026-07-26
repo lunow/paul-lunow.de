@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from '@/components/Button'
+import clsx from 'clsx'
 
 function LinkedInIcon(props) {
   return (
@@ -52,7 +52,9 @@ function MailIcon(props) {
   )
 }
 
-export function ContactLinks() {
+export function ContactLinks({ variant = 'light' }) {
+  const isDark = variant === 'dark'
+
   return (
     <div className="mx-8 mt-8 grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
       {[
@@ -67,25 +69,20 @@ export function ContactLinks() {
           icon: InstagramIcon,
         },
         { href: 'mailto:hallo25@paul.lun.io', text: 'E-Mail', icon: MailIcon },
-      ].map(({ href, text, icon }, index) => (
-        // <Link
-        //   href={href}
-        //   className="my-2 inline-flex items-center rounded p-2 text-base font-medium tracking-tight text-slate-900 hover:bg-teal-700 hover:text-white md:justify-center md:text-center"
-        // >
-        //   {icon({ className: 'h-10 w-10 fill-current' })}
-        //   <span className="ml-2 mr-6">{text}</span>
-        // </Link>
-
-        <Button
+      ].map(({ href, text }, index) => (
+        <Link
           key={index}
           href={href}
           target="_blank"
-          variant="outline"
-          className="my-2 inline-flex items-center rounded py-1 text-base font-medium md:justify-center md:text-center"
+          className={clsx(
+            'my-2 inline-flex items-center justify-center rounded-full border px-6 py-2 text-base font-light tracking-tight transition',
+            isDark
+              ? 'border-white/25 text-white hover:bg-white/10'
+              : 'border-teal-900/30 text-teal-900 hover:bg-teal-50',
+          )}
         >
-          {/* <span>{icon({ className: 'h-10 w-10' })}</span> */}
-          <span className="ml-2 mr-6">{text}</span>
-        </Button>
+          {text}
+        </Link>
       ))}
     </div>
   )

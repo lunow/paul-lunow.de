@@ -11,19 +11,18 @@ function Plan({ name, description, price, features, href, featured = false }) {
     <div
       className={clsx(
         'relative px-4 py-16 sm:rounded-5xl sm:px-10 md:py-12 lg:px-12',
-        featured && 'sm:shadow-lg',
+        featured && 'bg-slate-900 sm:shadow-lg',
       )}
-      style={featured ? { backgroundColor: '#FF6A47' } : {}}
     >
       {featured && (
-        <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
+        <div className="absolute inset-0 text-white/5 [mask-image:linear-gradient(white,transparent)]">
           <GridPattern x="50%" y="50%" />
         </div>
       )}
       <div className="relative flex flex-col">
         <h3
           className={clsx(
-            'mt-7 text-lg font-semibold tracking-tight',
+            'mt-7 font-display text-xl font-medium tracking-tight',
             featured ? 'text-white' : 'text-slate-900',
           )}
         >
@@ -31,8 +30,8 @@ function Plan({ name, description, price, features, href, featured = false }) {
         </h3>
         <p
           className={clsx(
-            'mt-2 text-lg tracking-tight',
-            featured ? 'text-white' : 'text-slate-600',
+            'mt-2 text-lg font-light tracking-tight',
+            featured ? 'text-white/80' : 'text-slate-600',
           )}
         >
           {description}
@@ -102,10 +101,10 @@ export function Work({ translations }) {
         <SectionHeading number="3" id="work-title">
           {translations.title}
         </SectionHeading>
-        <p className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+        <p className="mt-8 font-display text-3xl font-light tracking-tight text-slate-900 sm:text-5xl">
           {translations.heading}
         </p>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
+        <p className="mt-4 max-w-xl text-lg font-light tracking-tight text-slate-600">
           {translations.description}
         </p>
         <div className="mt-8 md:hidden">

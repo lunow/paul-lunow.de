@@ -87,10 +87,10 @@ export function Testimonials({ translations, locale = 'en' }) {
   return (
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
-        <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
+        <h2 className="font-display text-4xl font-light tracking-tight text-slate-900">
           {translations.title}
         </h2>
-        <p className="mt-4 text-lg tracking-tight text-slate-600">
+        <p className="mt-4 text-lg font-light tracking-tight text-slate-600">
           {translations.description}
         </p>
       </Container>

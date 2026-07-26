@@ -125,7 +125,7 @@ export function RootDocument({ lang, children }) {
     <html
       lang={lang}
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth bg-stone-50 antialiased',
         inter.variable,
       )}
     >
@@ -143,7 +143,7 @@ export function RootDocument({ lang, children }) {
         />
         <link
           rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
+          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@200,300,500,700,800&display=swap"
         />
         <link
           rel="alternate"

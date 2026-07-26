@@ -239,10 +239,10 @@ export function Podcasts({ translations }) {
         <SectionHeading number="2" id="podcasts-title">
           {translations.title}
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+        <p className="mt-8 font-display text-4xl font-light tracking-tight text-slate-900">
           {translations.heading}
         </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
+        <p className="mt-4 text-lg font-light tracking-tight text-slate-700">
           {translations.description}
         </p>
       </Container>
@@ -258,10 +258,10 @@ export function Podcasts({ translations }) {
               onClick={() => handlePlayAudio(index, video.link)}
             >
               <div
-                className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
+                className="relative flex h-44 items-center justify-center rounded-[1.5rem] px-6 ring-1 ring-slate-900/5"
                 style={{
                   backgroundImage:
-                    'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
+                    'linear-gradient(135deg, #cdd8c5 0%, #aab9a3 100%)',
                 }}
               >
                 <div className="flex overflow-hidden rounded shadow-sm">
