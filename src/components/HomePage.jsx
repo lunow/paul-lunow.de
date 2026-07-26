@@ -18,8 +18,8 @@ export function HomePage({ locale }) {
 
   return (
     <LocaleProvider locale={locale}>
-      <Welcome translations={t.welcome} />
       <NavBar translations={t.navbar} />
+      <Welcome translations={t.welcome} />
       <Podcasts translations={t.podcasts} />
       <Testimonial
         id="testimonial-from-gerardo-stark"

@@ -233,7 +233,7 @@ export function Podcasts({ translations }) {
     <section
       id="podcasts"
       aria-labelledby="podcasts-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-12 py-16 sm:scroll-mt-14 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="2" id="podcasts-title">

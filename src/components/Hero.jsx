@@ -31,7 +31,7 @@ export function Hero({ translations, preorderTranslations }) {
   return (
     <header
       id="writing"
-      className="scroll-mt-14 overflow-hidden bg-slate-100 sm:scroll-mt-32 lg:bg-transparent lg:px-5"
+      className="scroll-mt-12 overflow-hidden bg-slate-100 sm:scroll-mt-14 lg:bg-transparent lg:px-5"
     >
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">

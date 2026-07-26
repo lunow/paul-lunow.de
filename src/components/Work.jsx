@@ -96,7 +96,7 @@ export function Work({ translations }) {
     <section
       id="work"
       aria-labelledby="work-title"
-      className="scroll-mt-14 pb-8 pt-16 sm:scroll-mt-32 sm:pb-10 sm:pt-20 lg:pb-16 lg:pt-32"
+      className="scroll-mt-12 pb-8 pt-16 sm:scroll-mt-14 sm:pb-10 sm:pt-20 lg:pb-16 lg:pt-32"
     >
       <Container>
         <SectionHeading number="3" id="work-title">
